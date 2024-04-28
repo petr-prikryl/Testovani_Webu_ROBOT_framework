@@ -1,187 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T14:44:32.960283" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T18:40:45.621277" rpa="false" schemaversion="5">
 <suite id="s1" name="Proejtk" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk">
 <suite id="s1-s1" name="Testy" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy">
-<suite id="s1-s1-s1" name="Testy Fotogalerie" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_fotogalerie">
-<suite id="s1-s1-s1-s1" name="Test31Fotogalerie2012" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_fotogalerie\test31fotogalerie2012.robot">
+<suite id="s1-s1-s1" name="Testy menu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Testy_menu">
+<suite id="s1-s1-s1-s1" name="Test38Ukazujesecaptcha" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Testy_menu\test38ukazujesecaptcha.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-04-28T14:44:33.351618" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-04-28T18:40:45.816962" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T14:44:33.348606" elapsed="6.410728"/>
+<status status="PASS" start="2024-04-28T18:40:45.816962" elapsed="2.484839"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="Test Fotogalerie 2012" line="7">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T14:44:39.762935" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
-<arg>xpath=//a[@href='/fotogalerie/ms-55/p1=12583']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T14:44:39.761219" elapsed="0.549160"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Fotogalerie')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T14:44:40.310379" elapsed="0.022808"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T14:44:40.336543" level="INFO">Clicking element 'xpath=//a[@href='/2012/ms-2189/p1=2189']'.</msg>
-<arg>xpath=//a[@href='/2012/ms-2189/p1=2189']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T14:44:40.336543" elapsed="0.391380"/>
+<test id="s1-s1-s1-s1-t1" name="testcaptchi" line="8">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T18:40:48.305846" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
+<arg>css:button.btn[name="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T18:40:48.304836" elapsed="0.085515"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), '2012')]</arg>
+<arg>xpath=//*[@id="volrecaptcha0"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T14:44:40.729693" elapsed="0.022153"/>
+<status status="PASS" start="2024-04-28T18:40:48.391359" elapsed="0.028177"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T14:44:40.751846" level="INFO">Clicking element 'xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']'.</msg>
-<arg>xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T14:44:40.751846" elapsed="0.468292"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Výroba vánočních ozdob z korálků (12.12.2012)')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T14:44:41.220138" elapsed="0.021857"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T14:44:41.241995" level="INFO">Clicking element 'xpath=//img[@alt='Vánoční ozdoby 01']'.</msg>
-<msg time="2024-04-28T14:44:42.797021" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-28T14:44:42.797021" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/assets/Image.ashx?id_org=1982&amp;amp;id_obrazky=22300&amp;amp;datum=2%2F13%2F2013+4%3A15%3A46+PM" alt="Vánoční ozdoby 01" width="500" height="375"&gt; is not clickable at point (555, 776). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6F0B41502+60802]
-	(No symbol) [0x00007FF6F0ABAC02]
-	(No symbol) [0x00007FF6F0977CE4]
-	(No symbol) [0x00007FF6F09CE877]
-	(No symbol) [0x00007FF6F09CC344]
-	(No symbol) [0x00007FF6F09C980A]
-	(No symbol) [0x00007FF6F09C89E2]
-	(No symbol) [0x00007FF6F09BAE8B]
-	(No symbol) [0x00007FF6F09EAB7A]
-	(No symbol) [0x00007FF6F09BA7C6]
-	(No symbol) [0x00007FF6F09EAD90]
-	(No symbol) [0x00007FF6F0A0A224]
-	(No symbol) [0x00007FF6F09EA923]
-	(No symbol) [0x00007FF6F09B8FEC]
-	(No symbol) [0x00007FF6F09B9C21]
-	GetHandleVerifier [0x00007FF6F0E4411D+3217821]
-	GetHandleVerifier [0x00007FF6F0E860B7+3488055]
-	GetHandleVerifier [0x00007FF6F0E7F03F+3459263]
-	GetHandleVerifier [0x00007FF6F0BFB846+823494]
-	(No symbol) [0x00007FF6F0AC5F9F]
-	(No symbol) [0x00007FF6F0AC0EC4]
-	(No symbol) [0x00007FF6F0AC1052]
-	(No symbol) [0x00007FF6F0AB18A4]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</msg>
-<arg>xpath=//img[@alt='Vánoční ozdoby 01']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-04-28T14:44:41.241995" elapsed="1.560794">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/assets/Image.ashx?id_org=1982&amp;amp;id_obrazky=22300&amp;amp;datum=2%2F13%2F2013+4%3A15%3A46+PM" alt="Vánoční ozdoby 01" width="500" height="375"&gt; is not clickable at point (555, 776). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6F0B41502+60802]
-	(No symbol) [0x00007FF6F0ABAC02]
-	(No symbol) [0x00007FF6F0977CE4]
-	(No symbol) [0x00007FF6F09CE877]
-	(No symbol) [0x00007FF6F09CC344]
-	(No symbol) [0x00007FF6F09C980A]
-	(No symbol) [0x00007FF6F09C89E2]
-	(No symbol) [0x00007FF6F09BAE8B]
-	(No symbol) [0x00007FF6F09EAB7A]
-	(No symbol) [0x00007FF6F09BA7C6]
-	(No symbol) [0x00007FF6F09EAD90]
-	(No symbol) [0x00007FF6F0A0A224]
-	(No symbol) [0x00007FF6F09EA923]
-	(No symbol) [0x00007FF6F09B8FEC]
-	(No symbol) [0x00007FF6F09B9C21]
-	GetHandleVerifier [0x00007FF6F0E4411D+3217821]
-	GetHandleVerifier [0x00007FF6F0E860B7+3488055]
-	GetHandleVerifier [0x00007FF6F0E7F03F+3459263]
-	GetHandleVerifier [0x00007FF6F0BFB846+823494]
-	(No symbol) [0x00007FF6F0AC5F9F]
-	(No symbol) [0x00007FF6F0AC0EC4]
-	(No symbol) [0x00007FF6F0AC1052]
-	(No symbol) [0x00007FF6F0AB18A4]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//a[@id='buttonDetail']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-28T14:44:42.802789" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//span[@id='vpred']/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-28T14:44:42.802789" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//span[@id='vpred']/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-28T14:44:42.802789" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//span[@id='vpred']/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-04-28T14:44:42.802789" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-04-28T14:44:39.761219" elapsed="3.047087">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img src="/assets/Image.ashx?id_org=1982&amp;amp;id_obrazky=22300&amp;amp;datum=2%2F13%2F2013+4%3A15%3A46+PM" alt="Vánoční ozdoby 01" width="500" height="375"&gt; is not clickable at point (555, 776). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6F0B41502+60802]
-	(No symbol) [0x00007FF6F0ABAC02]
-	(No symbol) [0x00007FF6F0977CE4]
-	(No symbol) [0x00007FF6F09CE877]
-	(No symbol) [0x00007FF6F09CC344]
-	(No symbol) [0x00007FF6F09C980A]
-	(No symbol) [0x00007FF6F09C89E2]
-	(No symbol) [0x00007FF6F09BAE8B]
-	(No symbol) [0x00007FF6F09EAB7A]
-	(No symbol) [0x00007FF6F09BA7C6]
-	(No symbol) [0x00007FF6F09EAD90]
-	(No symbol) [0x00007FF6F0A0A224]
-	(No symbol) [0x00007FF6F09EA923]
-	(No symbol) [0x00007FF6F09B8FEC]
-	(No symbol) [0x00007FF6F09B9C21]
-	GetHandleVerifier [0x00007FF6F0E4411D+3217821]
-	GetHandleVerifier [0x00007FF6F0E860B7+3488055]
-	GetHandleVerifier [0x00007FF6F0E7F03F+3459263]
-	GetHandleVerifier [0x00007FF6F0BFB846+823494]
-	(No symbol) [0x00007FF6F0AC5F9F]
-	(No symbol) [0x00007FF6F0AC0EC4]
-	(No symbol) [0x00007FF6F0AC1052]
-	(No symbol) [0x00007FF6F0AB18A4]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</status>
+<status status="PASS" start="2024-04-28T18:40:48.302803" elapsed="0.117738"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T14:44:42.812864" elapsed="2.350953"/>
+<status status="PASS" start="2024-04-28T18:40:48.422631" elapsed="2.288535"/>
 </kw>
-<status status="FAIL" start="2024-04-28T14:44:33.006786" elapsed="12.157031"/>
+<status status="PASS" start="2024-04-28T18:40:45.647022" elapsed="5.064654"/>
 </suite>
-<status status="FAIL" start="2024-04-28T14:44:33.001397" elapsed="12.163837"/>
+<status status="PASS" start="2024-04-28T18:40:45.645396" elapsed="5.067293"/>
 </suite>
-<status status="FAIL" start="2024-04-28T14:44:33.001397" elapsed="12.166736"/>
+<status status="PASS" start="2024-04-28T18:40:45.642321" elapsed="5.071365"/>
 </suite>
-<status status="FAIL" start="2024-04-28T14:44:32.969285" elapsed="12.198848"/>
+<status status="PASS" start="2024-04-28T18:40:45.625392" elapsed="5.089296"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Proejtk">Proejtk</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testy">Proejtk.Testy</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Testy Fotogalerie">Proejtk.Testy.Testy Fotogalerie</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Test31Fotogalerie2012">Proejtk.Testy.Testy Fotogalerie.Test31Fotogalerie2012</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Proejtk">Proejtk</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testy">Proejtk.Testy</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testy menu">Proejtk.Testy.Testy menu</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Test38Ukazujesecaptcha">Proejtk.Testy.Testy menu.Test38Ukazujesecaptcha</stat>
 </suite>
 </statistics>
 <errors>

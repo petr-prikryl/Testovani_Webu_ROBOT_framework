@@ -1,64 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T16:48:06.497359" rpa="false" schemaversion="5">
-<suite id="s1" name="Test36Urednideskahodnestarydatum" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_uredni_deska\test36urednideskahodnestarydatum.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T18:40:24.317861" rpa="false" schemaversion="5">
+<suite id="s1" name="Test38Ukazujesecaptcha" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Testy_menu\test38ukazujesecaptcha.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-04-28T16:48:06.840837" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-04-28T18:40:24.551206" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T16:48:06.840837" elapsed="2.925515"/>
+<status status="PASS" start="2024-04-28T18:40:24.550203" elapsed="2.925483"/>
 </kw>
-<test id="s1-t1" name="Click Link And Verify Header" line="8">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:09.774659" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
-<arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T16:48:09.766352" elapsed="1.254746"/>
+<test id="s1-t1" name="testcaptchi" line="8">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T18:40:27.477690" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
+<arg>css:button.btn[name="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T18:40:27.476682" elapsed="0.153908"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
+<arg>xpath=//*[@id="volrecaptcha0"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T16:48:11.021098" elapsed="0.040091"/>
+<status status="PASS" start="2024-04-28T18:40:27.633072" elapsed="0.040328"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:11.061189" level="INFO">Typing text '25.04.1998' into text field 'id=ud_ke_dni'.</msg>
-<arg>id=ud_ke_dni</arg>
-<arg>25.04.1998</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T16:48:11.061189" elapsed="0.144249"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:11.205438" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
-<arg>id=ud</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-28T16:48:11.205438" elapsed="0.200673"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:11.414110" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
-<arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T16:48:11.406111" elapsed="0.790832"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:12.200953" level="INFO">Clicking link 'xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']'.</msg>
-<arg>xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T16:48:12.200953" elapsed="0.320952"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:48:12.553952" level="INFO">Current page contains element 'xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']'.</msg>
-<arg>xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-04-28T16:48:12.521905" elapsed="0.032047"/>
-</kw>
-<status status="PASS" start="2024-04-28T16:48:09.766352" elapsed="2.787600"/>
+<status status="PASS" start="2024-04-28T18:40:27.476682" elapsed="0.197683"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T16:48:12.553952" elapsed="2.363959"/>
+<status status="PASS" start="2024-04-28T18:40:27.676378" elapsed="2.306942"/>
 </kw>
-<status status="PASS" start="2024-04-28T16:48:06.505451" elapsed="8.412460"/>
+<status status="PASS" start="2024-04-28T18:40:24.323368" elapsed="5.659952"/>
 </suite>
 <statistics>
 <total>
@@ -67,7 +35,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test36Urednideskahodnestarydatum">Test36Urednideskahodnestarydatum</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test38Ukazujesecaptcha">Test38Ukazujesecaptcha</stat>
 </suite>
 </statistics>
 <errors>

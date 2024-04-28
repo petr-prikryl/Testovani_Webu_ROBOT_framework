@@ -4,6 +4,8 @@ Resource    ../../object_repository.robot
 Suite Setup    Open Browser    ${URL}    ${BROWSER}
 Suite Teardown    Close Browser
 
+*** Variables ***
+${EXPECTED_TEXT}  Kritéria pro zobrazení: úřední deska ke dni 25.4.2050, dokumenty včetně archivu
 *** Test Cases ***
 Click Link And Verify Header
     Click Link    xpath=//a[contains(text(), 'Celá úřední deska')]
@@ -12,4 +14,5 @@ Click Link And Verify Header
     Select From List by Value    id=ud    1
     Click Button    css=p.inline-form-button.fbtn input[type='submit']
     Click Link    xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']
-    Page Should Contain Element    xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']
+    ${body_text}=   Get Text    xpath=//body
+    Should Contain  ${body_text}    ${EXPECTED_TEXT}
