@@ -15,3 +15,5 @@ ${2ndPassword}    ahojbrouku
 ${Login Button XPath}    //input[@type="submit" and @value="Přihlásit"]
 ${Expected Username}   Petr petr@prikryl.cc (petr@prikryl.cc)
 ${Popup}  Přístup nepovolen, zadejte prosím platné jméno a heslo.
+${LINK_TEXT22}      Zobrazit na mapě
+${EXPECTED_TEXT22}  Stránka nebyla nalezena (kód 404)
