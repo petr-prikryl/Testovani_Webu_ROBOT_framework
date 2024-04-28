@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T16:14:50.826737" rpa="false" schemaversion="5">
-<suite id="s1" name="Test32Jednesopravdudnes" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_kalendar\test32jednesopravdudnes.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T16:48:06.497359" rpa="false" schemaversion="5">
+<suite id="s1" name="Test36Urednideskahodnestarydatum" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_uredni_deska\test36urednideskahodnestarydatum.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-04-28T16:14:51.203518" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-04-28T16:48:06.840837" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T16:14:51.202989" elapsed="4.695348"/>
+<status status="PASS" start="2024-04-28T16:48:06.840837" elapsed="2.925515"/>
 </kw>
-<test id="s1-t1" name="Compare Dates" line="10">
-<kw name="Get Current Date" owner="DateTime">
-<msg time="2024-04-28T16:14:55.899522" level="INFO">${current_day} = 28</msg>
-<var>${current_day}</var>
-<arg>result_format=%d</arg>
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2024-04-28T16:14:55.899522" elapsed="0.000000"/>
+<test id="s1-t1" name="Click Link And Verify Header" line="8">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:09.774659" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:48:09.766352" elapsed="1.254746"/>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-04-28T16:14:55.924045" level="INFO">${element_text} = 28</msg>
-<var>${element_text}</var>
-<arg>xpath=//td[@class='wkday curdate']</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T16:14:55.899522" elapsed="0.024523"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T16:48:11.021098" elapsed="0.040091"/>
 </kw>
-<kw name="Should Be Equal As Strings" owner="BuiltIn">
-<arg>${current_day}</arg>
-<arg>${element_text}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-28T16:14:55.924045" elapsed="0.000000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:11.061189" level="INFO">Typing text '25.04.1998' into text field 'id=ud_ke_dni'.</msg>
+<arg>id=ud_ke_dni</arg>
+<arg>25.04.1998</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:48:11.061189" elapsed="0.144249"/>
 </kw>
-<status status="PASS" start="2024-04-28T16:14:55.898337" elapsed="0.027717"/>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:11.205438" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
+<arg>id=ud</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-28T16:48:11.205438" elapsed="0.200673"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:11.414110" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
+<arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:48:11.406111" elapsed="0.790832"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:12.200953" level="INFO">Clicking link 'xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']'.</msg>
+<arg>xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:48:12.200953" elapsed="0.320952"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:48:12.553952" level="INFO">Current page contains element 'xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']'.</msg>
+<arg>xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-04-28T16:48:12.521905" elapsed="0.032047"/>
+</kw>
+<status status="PASS" start="2024-04-28T16:48:09.766352" elapsed="2.787600"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T16:14:55.927060" elapsed="2.303450"/>
+<status status="PASS" start="2024-04-28T16:48:12.553952" elapsed="2.363959"/>
 </kw>
-<status status="PASS" start="2024-04-28T16:14:50.832795" elapsed="7.398953"/>
+<status status="PASS" start="2024-04-28T16:48:06.505451" elapsed="8.412460"/>
 </suite>
 <statistics>
 <total>
@@ -44,7 +67,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test32Jednesopravdudnes">Test32Jednesopravdudnes</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test36Urednideskahodnestarydatum">Test36Urednideskahodnestarydatum</stat>
 </suite>
 </statistics>
 <errors>
