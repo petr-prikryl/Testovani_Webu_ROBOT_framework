@@ -1,0 +1,24 @@
+TC003-003 - Kontrola funkčnosti sdílení na twitteru
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Fotogalerie
+2. počkáme než se objeví nadpis Fotogalerie
+3. klikneme na tlačítko s rokem 2012
+4. počkáme než se ukáže nadpis 2012
+5. Klikneme na výroba Vánočních ozdob z korálků
+6. Počkáme na nadpis výroba Vánočních ozdob z korálků
+7. klikeneme na sdílet na x
+8. počkáme 5s a vybereme druhou kartu
+9. zkontrolujeme zda-li se nacházíme na twitter.com
+Popis : Testuje funkčnost sdílení na twitteru
+Očekávany výsledek: Po kliknutí na fotogalerii, 2012, a výroba Vánočních ozdob z korálků se nám ukáže daná galerie kterou můžeme sdílet na síti X

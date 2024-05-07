@@ -1,0 +1,24 @@
+TC003-002 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2020 + listování
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Fotogalerie
+2. počkáme než se objeví nadpis Fotogalerie
+3. klikneme na tlačítko s rokem 2020	
+4. počkáme než se ukáže nadpis 2020
+5. Klikneme na výroba Sbírka Krabice od bot (29. 11. 2020)
+6. Počkáme na nadpis výroba Sbírka Krabice od bot (29. 11. 2020)
+7. klikneme na šipku vpřed
+8. počkáme než se strana načte
+9. zkontrolujeme zda-li se ukazuje  Zobrazeno je 2 z celkem 26 záznamů na stránce
+Popis : Testuje funkčnost fotogalerie
+Očekávany výsledek: Po kliknutí na fotogalerii, 20, a výroba Sbírka Krabice od bot (29. 11. 2020) se nám ukáže daná galerie po kliknutí na šipku vpřed se nám ukáže druhá strana této fotogalerie

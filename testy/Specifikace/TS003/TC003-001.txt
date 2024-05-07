@@ -1,0 +1,21 @@
+TC003-001 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Fotogalerie
+2. počkáme než se objeví nadpis Fotogalerie
+3. klikneme na tlačítko s rokem 2012
+4. počkáme než se ukáže nadpis 2012
+5. Klikneme na výroba Vánočních ozdob z korálků
+6. Počkáme na nadpis výroba Vánočních ozdob z korálků
+Popis : Testuje funkčnost fotogalerie
+Očekávany výsledek: Po kliknutí na fotogalerii, 2012, a výroba Vánočních ozdob z korálků se nám ukáže daná galerie

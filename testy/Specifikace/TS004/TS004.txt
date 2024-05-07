@@ -1,7 +1,7 @@
-TS002 - Úřední deska
+TS003 - Infokanal
 
 Stručný popis:
-Tato testovací sada slouží k  testování úřední desky na stránce
+Tato testovací sada slouží k testování Infokanálu na stránce
 
 Datum 07.05.2024
 Verze 1

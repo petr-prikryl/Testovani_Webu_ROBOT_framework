@@ -1,0 +1,21 @@
+TC003-001 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Hlášení rozhlasem
+2. počkáme než se objeví nadpis Hlášení místního rozhlasu
+3. klikneme na tlačítko Infokanál
+4. počkáme než se ukáže nadpis Infokanál
+5. Klikneme na odkaz na registrační formulář
+6. zkontrolujeme zda-li jsme na stránce infokanal.cz
+Popis : Testuje funkčnost stránky infokanál
+Očekávany výsledek: Po kliknutí na infokanál jsme přesměrování na infokanál

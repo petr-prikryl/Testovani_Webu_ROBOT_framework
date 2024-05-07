@@ -1,0 +1,23 @@
+TC005-002 - Kontrola funkčnosti přihlášení - neexistující uživatel
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS005.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizujeme okno
+2. klikneme na Přihlásit se
+3. počkáme než jsme na stránce s nadpisem přihlášení uživatele
+4. Zadáme neexistující Username
+5. Zadáme password
+6. klikeneme na tlačítko Přihlásit
+7. měl by se ukázat popup s nápisem Přístup nepovolen, zadejte prosím platné jméno a heslo.
+
+Popis : Testuje funkčnost přihlášení s nesprávným uzivatelem
+Očekávany výsledek: S nesprávným už. jménem nám systém nedovolí se přihlásit
