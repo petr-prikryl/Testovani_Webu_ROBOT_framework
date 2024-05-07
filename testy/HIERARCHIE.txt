@@ -56,4 +56,9 @@ TS006- Manuální testy
 		TC006-003- proklik na pdf Rozvoj městyse 
 		TC006-004- proklik na Mapový portál
 		TC006-005- zpět na homepage pomocí kliknutí na logo města
-		
+		TC006-006- Zobrazení zpravodaje
+		TC006-007- Přesměrováni na http://www.mas-moravsky-kras.cz po kliknutí na logo
+		TC006-008- Přesměrováni na https://www.pivovarcernahora.cz po kliknutí na logo
+		TC006-009- Přesměrováni na http://www.idsjmk.cz/ po kliknutí na logo
+		TC006-010- Kontrola prokliku aktualit
+

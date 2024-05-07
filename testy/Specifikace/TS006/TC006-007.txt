@@ -1,0 +1,19 @@
+TC006-007- Přesměrováni na http://www.mas-moravsky-kras.cz po kliknutí na logo
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na logo moravského krasu s alt="MAS Moravský kras"
+2. přepenem se na nejnovější kartu
+3. zkontrolujeme zdali jsme na stránce http://www.mas-moravsky-kras.cz
+
+Popis : Testuje funkčnost prokliku na stránky moravského krasu při kliknutí na logo
+Očekávany výsledek: Po kliknutí na logo jsme správně přesměrováni

@@ -1,0 +1,20 @@
+TC006-006- Zobrazení zpravodaje
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na tlačítkoZpravodaj v seznamu s id="osn12579ui4"
+2. zkontrolujeme zdali jsme na stránce : https://www.cernahora.eu/zpravodaj/ds-1004/p1=12584
+3. klikneme na tlačítko Zpravodaje 2019
+4. až se zobraží Prosinec 2019 klikneme na něj
+5. Zkontrolujeme že se nám otevřel zpravodaj za prosinec 2019 v PDF
+Popis : Testuje funkčnost prokliku na zpravodaje
+Očekávany výsledek: Po kliknutí na konkrétní zpravodaj se nám otevře v PDF
