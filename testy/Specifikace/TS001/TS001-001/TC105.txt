@@ -1,0 +1,20 @@
+TC100 - Kontrola otevření odkazu Úřad
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+3. Kliknout na logo Facebooku
+4. Zkontrolovat jestli jsme byli přesměrování na facebook
+
+Popis : Testuje Tlačítko Facebooku
+Očekávany výsledek: Kliknutím tlačítko facebooku jsme přesměrování na facebook
