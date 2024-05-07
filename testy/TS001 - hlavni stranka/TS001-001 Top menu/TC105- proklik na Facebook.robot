@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../../object_repository.robot
+Resource    ../../../object_repository.robot
 Suite Setup    Open Browser    ${URL}    ${BROWSER} 
 Suite Teardown    Close Browser
 

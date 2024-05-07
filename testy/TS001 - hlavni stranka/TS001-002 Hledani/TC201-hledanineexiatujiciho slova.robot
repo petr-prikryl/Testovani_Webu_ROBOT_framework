@@ -1,16 +1,19 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../../object_repository.robot
+Resource    ../../../object_repository.robot
 Suite Setup    Open Browser    ${URL}    ${BROWSER}
 Suite Teardown    Close Browser
 
 *** Variables ***
-${Expected Link Text}    Žádost o povolení uzavřít manželství na jiném vhodném místě
+${Expected Text}    Žádná stránka nenalezena.
+
+
 *** Test Cases ***
 Test Hledani
     Maximize Browser Window
     Click Element    xpath=//a[contains(@class, 'fullscreen-search-anchor')]
-    Input Text    id=hl    matrika
+    Input Text    id=hl    ačokčovitý
     Click Button    css=.fullscreen-search-button
-    Click Element    link=2
-    ${link_visible}    Page Should Contain Element    xpath=//a[contains(text(),'${Expected Link Text}')]
+     Wait Until Page Contains Element    xpath=//p[@class='stav']
+    ${element_text}    Get Text    xpath=//p[@class='stav']
+    Should Be Equal As Strings    ${element_text}    ${Expected Text}
