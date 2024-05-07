@@ -1,0 +1,19 @@
+TC300 - Kontrola otevření odkazu Hlášení rozhlasem
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. KLikneme na Hlášení rozhlasem
+2. Ověříme že vidíme nadpis : Hlášení místního rozhlasu
+
+Popis : Testuje přesměrování pomocí odkazu Místní rozhlas
+Očekávany výsledek: Přesměruje na informace o místním rozhlasu

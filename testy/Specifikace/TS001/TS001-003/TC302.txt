@@ -1,0 +1,19 @@
+TC302 - Kontrola otevření odkazu Celá úřední deska
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. KLikneme na Celá úřední deska
+2. Ověříme že vidíme nadpis : Úřední deska
+
+Popis : Testuje přesměrování pomocí odkazu Celá úřední deska
+Očekávany výsledek: Přesměruje na Úřední deska

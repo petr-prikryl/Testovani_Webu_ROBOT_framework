@@ -1,0 +1,21 @@
+TC401 - Proklik na akci 5. březen
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-004.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Zjistíme jestli s eukazuje správný měsíc == květen 2024
+2. Dvakrát klikneme na šipku zpět u měsíce
+3. Zkontrolujeme že jsme přešli na Březen 2024
+4. Najdeme 5. den a klikneme na něj
+5. Ověříme že se nám ukazuje akce -> Svoz papírového odpadu
+
+Popis : Testuje funčnost kalendáře v daný datum
+Očekávany výsledek: Zobrazí správnou akci v daný datum -> Svoz papírového odpadu

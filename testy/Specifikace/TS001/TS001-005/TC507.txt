@@ -1,0 +1,19 @@
+TC507 - Kontrola nefunkčnosti prokliku zobrazit na Mapě
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-005.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. maximalizujeme okno
+2. klikneme na text Zobrazit na mapě
+2. zkontrolujeme že jsme se ocitli na stránce s nadpisem : Stránka nebyla nalezena (kód 404)
+
+Popis : Testuje zda-li pořád nefunguje přesměrování na mapu
+Očekávany výsledek: Po kliknutí na nápis Zobrazit na mapě nás to přesměruje na 404 stránku

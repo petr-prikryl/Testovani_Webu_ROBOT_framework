@@ -1,0 +1,21 @@
+TC402 - Proklik na akci 15.Červen
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-004.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Zjistíme jestli s eukazuje správný měsíc == květen 2024
+2. Klikneme na šipku vpřed u měsíce
+3. Zkontrolujeme že jsme přešli na Červen 2024
+4. Najdeme 15. den a klikneme na něj
+5. Ověříme že se nám ukazuje akce -> Dětský den
+
+Popis : Testuje funčnost kalendáře v daný datum
+Očekávany výsledek: Zobrazí správnou akci v daný datum -> Dětský den

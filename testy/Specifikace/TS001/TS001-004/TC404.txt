@@ -1,0 +1,19 @@
+TC404 - Kontrola jestli dnes je opravdu dnes
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-004.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. zjistíme dnešní datum
+2. odstraníme nulu před dnem pokud je menší jak 10 (07-->7)
+3. Zkontrolujeme že 7. den je curdate - je červený
+
+Popis : Testuje funčnost kalendáře v daný datum
+Očekávany výsledek: Dnešní datum je opravdu dnešní datum

@@ -1,0 +1,19 @@
+TC301 - Kontrola otevření odkazu Knihovna a informační centrum
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-003.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. KLikneme na Knihovna a informační centrum
+2. Ověříme že vidíme nadpis : Informační centrum a knihovna
+
+Popis : Testuje přesměrování pomocí odkazu Knihovna a informační centrum
+Očekávany výsledek: Přesměruje na Informační centrum a knihovna

@@ -1,0 +1,22 @@
+TC200 - Hledání slova Vánoce
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-002.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Kliknout na lupu
+3. Do vyhledávacího pole napíšeme Vánoce
+4. Klikneme na tlačítko vyhledat
+5. Zkontrolujeme že se zobrazila stránka s výsledky vyhledávání pro Vánoce
+
+Popis : Testuje vyhledávání slova Vánoce
+Očekávany výsledek: Vyhledá všechny záznamy obsahující Vánoce

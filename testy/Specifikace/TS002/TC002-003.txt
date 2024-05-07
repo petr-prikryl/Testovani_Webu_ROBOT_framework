@@ -1,0 +1,22 @@
+TC002-002 - Kontrola funkčnosti a zobrazení úřední desky ke dni 25.04.2050
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-005.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na celá úřední deska
+2. počkáme než se objeví nadpis úřední deska
+3. do pole "ke dni" vpíšeme 25.04.2050
+4. dáme seřadit dle data
+5. potvrdíme tlačítkem zobrazit
+6. klikneme na odkaz : Neformátovaný přehled úřední desky zachovávající parametry vyhledávání
+7. zkontrolujeme zda-li vidíme : Kritéria pro zobrazení: úřední deska ke dni 25.4.2050, dokumenty včetně archivu
+Popis : Testuje funkčnost úřední desky
+Očekávany výsledek: Po zadání údajů a potvrzení se octienem na stránce s výsledky a bude zde napsáno : Kritéria pro zobrazení: úřední deska ke dni 25.4.2050, dokumenty včetně archivu

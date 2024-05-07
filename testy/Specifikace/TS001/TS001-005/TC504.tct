@@ -1,0 +1,18 @@
+TC504 - Kontrola funkčnosti prokliku na Prohlášení o použití cookies
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-005.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na nápis Prohlášení o použití cookies
+2. zkontrolujeme že vidíme nadpis cookies
+
+Popis : Testuje proklik na správnou stránku
+Očekávany výsledek: Po kliknutí na nápis Prohlášení o použití cookies se ocitneme na stránce s nadpisem cookies

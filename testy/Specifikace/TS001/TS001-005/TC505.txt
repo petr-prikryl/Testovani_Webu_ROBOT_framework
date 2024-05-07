@@ -1,0 +1,17 @@
+TC505 - Kontrola funkčnosti prokliku na Mapa stránek
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-005.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na nápis Mapa stránek
+2. zkontrolujeme že vidíme nadpis Mapa stránek
+Popis : Testuje proklik na správnou stránku
+Očekávany výsledek: Po kliknutí na nápis Mapa stránek se ocitneme na stránce s nadpisem Mapa stránek

@@ -1,0 +1,22 @@
+TC201 - Hledání slova které se na stránce nevyskytuje
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-002.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Kliknout na lupu
+3. Do vyhledávacího pole napíšeme ačokčovitý
+4. Klikneme na tlačítko vyhledat
+5. Zkontrolujeme že se zobrazila stránka s nápisem "Žádná stránka nenalezena."
+
+Popis : Testuje vyhledávání nevyskytujícího se slova
+Očekávany výsledek: Nic nenajde protože slovo se na stránce nevyskytuje

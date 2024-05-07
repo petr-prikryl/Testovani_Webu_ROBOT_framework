@@ -1,0 +1,23 @@
+TC202 - Hledání slova matrika a přepnutí na druhou stránku výsledků
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-002.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Kliknout na lupu
+3. Do vyhledávacího pole napíšeme ačokčovitý
+4. Klikneme na tlačítko vyhledat
+5. Klikneme na číslo 2 pro přejití na další stránku
+5. Zkontrolujeme že se zobrazila stránka obsahující : " Žádost o povolení uzavřít manželství na jiném vhodném místě"
+
+Popis : Testuje přechod mezi stránkami po vyhledávání
+Očekávany výsledek: Stránka jde přepnout po vyhledávání

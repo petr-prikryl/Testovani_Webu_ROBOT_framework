@@ -1,0 +1,12 @@
+TS001 - Úřední deska
+
+Stručný popis:
+Tato testovací sada slouží k úřední desky na stránce
+
+Datum 07.05.2024
+Verze 1
+Autor - Petr Přikryl
+
+Pre-conditions
+	1. Máme otevřený prohlížeč Chrome - verze 121.0.6312.122
+	2. Hlavní stránka je načtená - vrací status 200

@@ -1,0 +1,20 @@
+TC400 - Proklik na akci 14. května
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001-004.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Zjistíme jetli s eukazuje správný měsív == květen 2024
+2. Najdeme 14. den a klikneme na něj
+3. Ověříme že se nám ukazuje akce -> Svoz plastového odpadu
+
+Popis : Testuje funčnost kalendáře v daný datum
+Očekávany výsledek: Zobrazí správnou akci v daný datum -> Svoz plastového odpadu
