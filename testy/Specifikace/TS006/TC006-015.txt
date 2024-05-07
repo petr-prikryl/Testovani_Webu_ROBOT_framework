@@ -1,4 +1,4 @@
-TC006-015 - Kontrola vyhledávání uživatelů - neexistující jmébo
+TC006-015 - Kontrola vyhledávání uživatelů - neexistující jméno
 Autor - Petr Přikryl
 Datum - 07.05.2024
 Verze = 1

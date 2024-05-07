@@ -1,0 +1,18 @@
+TC006-016 - Kontrola prokliku aktualit - Bál - png
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Jarní Orelský bál v sekci aktuality
+2. zkontrolujeme zdali jsme na stránce https://www.cernahora.eu/assets/File.ashx?id_org=1982&id_dokumenty=12622 a vidíme plakát s pozvánkou na bál
+
+Popis : Testuje funkčnost prokliku na pozvánku na bál
+Očekávany výsledek: Po kliknutí na Text jsme správně přesměrováni

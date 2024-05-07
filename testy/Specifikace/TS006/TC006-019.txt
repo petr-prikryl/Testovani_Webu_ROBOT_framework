@@ -1,0 +1,17 @@
+TC006-019 - Kontrola prokliku nejhlubší záhlaví - WEBHOUSE
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme v záhlaví na WEBHOUSE
+2. zkontrolujeme zdali jsme byli přesměrování na stránku : https://webhouse.cz
+Popis : Testuje funkčnost prokliku WEBHOUSE na jejich stránky
+Očekávany výsledek: Po kliknutí na Text jsme správně přesměrováni

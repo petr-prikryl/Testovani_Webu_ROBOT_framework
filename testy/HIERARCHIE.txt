@@ -52,18 +52,24 @@ TS005 - Přihlašování
 		TC005-008 - Přihlášení a zrušení odběru novinek
 TS006- Manuální testy
 		TC006-001 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - rozkliknutí fotografii a posouvání
-		TC006-002- Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - slideshow
-		TC006-003- proklik na pdf Rozvoj městyse 
-		TC006-004- proklik na Mapový portál
-		TC006-005- zpět na homepage pomocí kliknutí na logo města
-		TC006-006- Zobrazení zpravodaje
-		TC006-007- Přesměrováni na http://www.mas-moravsky-kras.cz po kliknutí na logo
-		TC006-008- Přesměrováni na https://www.pivovarcernahora.cz po kliknutí na logo
-		TC006-009- Přesměrováni na http://www.idsjmk.cz/ po kliknutí na logo
-		TC006-010- Kontrola prokliku aktualit
+		TC006-002 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - slideshow
+		TC006-003 - proklik na pdf Rozvoj městyse 
+		TC006-004 - proklik na Mapový portál
+		TC006-005 - zpět na homepage pomocí kliknutí na logo města
+		TC006-006 - Zobrazení zpravodaje
+		TC006-007 - Přesměrováni na http://www.mas-moravsky-kras.cz po kliknutí na logo
+		TC006-008 - Přesměrováni na https://www.pivovarcernahora.cz po kliknutí na logo
+		TC006-009 - Přesměrováni na http://www.idsjmk.cz/ po kliknutí na logo
+		TC006-010 - Kontrola prokliku aktualit - Fotbal - stránka
 		TC006-011 - Kontrola funkčnosti změny údajů - jméno
 		TC006-012 - Kontrola funkčnosti změny údajů - email
 		TC006-013 - Kontrola funkčnosti změny údajů - odebrání emailu
 		TC006-014 - Kontrola vyhledávání uživatelů
-		TC006-015 - Kontrola vyhledávání uživatelů - neexistující jmébo
+		TC006-015 - Kontrola vyhledávání uživatelů - neexistující jméno
+		TC006-016 - Kontrola prokliku aktualit - Bál - PNG
+		TC006-017 - Kontrola prokliku aktualit - Večer s Hejným - JPG
+		TC006-018 - Kontrola prokliku aktualit - Oznámení o době a místě konání voleb do Evropského parlamentu - PDF
+		TC006-019 - Kontrola prokliku nejhlubší záhlaví - WEBHOUSE
+		TC006-020 - Kontrola prokliku nejhlubší záhlaví - VISMO
+
 
