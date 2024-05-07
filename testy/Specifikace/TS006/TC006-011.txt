@@ -1,0 +1,29 @@
+TC006-011 - Kontrola funkčnosti změny údajů - jméno
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální 
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizujeme okno
+2. klikneme na Přihlásit se
+3. počkáme než jsme na stránce s nadpisem přihlášení uživatele
+4. Zadáme Username -> petr@prikryl.cc
+5. Zadáme password -> ZDrpvf916vP
+6. klikeneme na tlačítko Přihlásit
+7. počkáme než se ukáže :  Klikněte pro změnu profilu uživatele
+8. zkontrolujeme že se příhlasil uživatel Petr petr@prikryl.cc
+9. klikneme na Petr petr@prikryl.cc (petr@prikryl.cc)     a otevře se nám menu
+10.pravým klikneme na Petr
+11.V nabídce přepíšeme na Josef
+12. stiskneme tlačítko OK
+13. Zkontolujeme že jsme přejmenovaní
+
+Popis : Testuje funkčnost změny jména
+Očekávany výsledek: Po přihlášení můžeme měnit jméno

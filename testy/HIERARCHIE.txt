@@ -61,4 +61,9 @@ TS006- Manuální testy
 		TC006-008- Přesměrováni na https://www.pivovarcernahora.cz po kliknutí na logo
 		TC006-009- Přesměrováni na http://www.idsjmk.cz/ po kliknutí na logo
 		TC006-010- Kontrola prokliku aktualit
+		TC006-011 - Kontrola funkčnosti změny údajů - jméno
+		TC006-012 - Kontrola funkčnosti změny údajů - email
+		TC006-013 - Kontrola funkčnosti změny údajů - odebrání emailu
+		TC006-014 - Kontrola vyhledávání uživatelů
+		TC006-015 - Kontrola vyhledávání uživatelů - neexistující jmébo
 
