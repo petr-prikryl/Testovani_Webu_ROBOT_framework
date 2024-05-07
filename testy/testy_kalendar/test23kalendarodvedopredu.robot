@@ -6,7 +6,6 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 Verify Calendar Navigation
-    Click Element    xpath=//a[@class='sipka p']
     Page Should Contain Element    xpath=//a[text()='Květen 2024']
     Click Element    xpath=//a[@class='sipka p']
     Page Should Contain Element    xpath=//a[text()='Červen 2024']
