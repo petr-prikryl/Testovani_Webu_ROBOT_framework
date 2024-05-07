@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:54:28.297151" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:11:15.074680" rpa="false" schemaversion="5">
 <suite id="s1" name="TC300 - kontrola otevreni odkazu hlaseni rozhlasem" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-003 Body\TC300 - kontrola otevreni odkazu hlaseni rozhlasem.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:54:28.484135" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:11:15.258389" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:54:28.483630" elapsed="2.710090"/>
+<status status="PASS" start="2024-05-07T22:11:15.258389" elapsed="2.387757"/>
 </kw>
 <test id="s1-t1" name="Test Click Link and Verify Heading" line="13">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:31.194721" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Hlášení rozhlasem')]'.</msg>
+<msg time="2024-05-07T22:11:17.647261" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Hlášení rozhlasem')]'.</msg>
 <arg>xpath=//a[contains(text(), '${Link Text}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:31.194721" elapsed="0.489861"/>
+<status status="PASS" start="2024-05-07T22:11:17.647261" elapsed="0.597518"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:31.703406" level="INFO">Current page contains element 'xpath=//h2[contains(text(), 'Hlášení místního rozhlasu')]'.</msg>
+<msg time="2024-05-07T22:11:18.261788" level="INFO">Current page contains element 'xpath=//h2[contains(text(), 'Hlášení místního rozhlasu')]'.</msg>
 <arg>xpath=//h2[contains(text(), '${Expected Heading}')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:54:31.685929" elapsed="0.017477"/>
+<status status="PASS" start="2024-05-07T22:11:18.245774" elapsed="0.016014"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:54:31.193720" elapsed="0.509686"/>
+<status status="PASS" start="2024-05-07T22:11:17.646146" elapsed="0.616649"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:54:31.704485" elapsed="2.240750"/>
+<status status="PASS" start="2024-05-07T22:11:18.263799" elapsed="2.266669"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:54:28.299149" elapsed="5.646086"/>
+<status status="PASS" start="2024-05-07T22:11:15.075691" elapsed="5.454777"/>
 </suite>
 <statistics>
 <total>

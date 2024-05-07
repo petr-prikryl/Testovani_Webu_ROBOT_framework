@@ -1,181 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:58:17.532964" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:15:26.442868" rpa="false" schemaversion="5">
 <suite id="s1" name="TC003-003 - Sdílení fotoglerie z roku 2012 na X" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS003 - Fotogalerie\TC003-003 - Sdílení fotoglerie z roku 2012 na X.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:58:17.720478" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:15:26.656498" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:58:17.719474" elapsed="2.405374"/>
+<status status="PASS" start="2024-05-07T22:15:26.655137" elapsed="4.112235"/>
 </kw>
 <test id="s1-t1" name="Test Fotogalerie 2012 sdileni na X" line="7">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:58:20.125859" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
+<msg time="2024-05-07T22:15:30.768479" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
 <arg>xpath=//a[@href='/fotogalerie/ms-55/p1=12583']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:58:20.125859" elapsed="0.455662"/>
+<status status="PASS" start="2024-05-07T22:15:30.768479" elapsed="0.437022"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Fotogalerie')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:58:20.582519" elapsed="0.020765"/>
+<status status="PASS" start="2024-05-07T22:15:31.205501" elapsed="0.021742"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:58:20.603284" level="INFO">Clicking element 'xpath=//a[@href='/2012/ms-2189/p1=2189']'.</msg>
+<msg time="2024-05-07T22:15:31.228251" level="INFO">Clicking element 'xpath=//a[@href='/2012/ms-2189/p1=2189']'.</msg>
 <arg>xpath=//a[@href='/2012/ms-2189/p1=2189']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:58:20.603284" elapsed="0.393592"/>
+<status status="PASS" start="2024-05-07T22:15:31.227243" elapsed="0.522369"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), '2012')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:58:20.996876" elapsed="0.021537"/>
+<status status="PASS" start="2024-05-07T22:15:31.750623" elapsed="0.022644"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:58:21.019784" level="INFO">Clicking element 'xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']'.</msg>
+<msg time="2024-05-07T22:15:31.774267" level="INFO">Clicking element 'xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']'.</msg>
 <arg>xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:58:21.019784" elapsed="0.460268"/>
+<status status="PASS" start="2024-05-07T22:15:31.774267" elapsed="0.675539"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Výroba vánočních ozdob z korálků (12.12.2012)')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:58:21.481237" elapsed="0.017523"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:58:21.499763" level="INFO">Clicking element 'xpath=//li[@class='sdilet-x']/a'.</msg>
-<msg time="2024-05-07T21:58:22.793873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-05-07T21:58:22.793873" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww%2Ecernahora%2Eeu%2Fvismo%2Fgalerie2%2Easp%3Fid%5Fgalerie%3D1024%26n%3Dvyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012%26p1%3D2189&amp;amp;text=V%C3%BDroba+v%C3%A1no%C4%8Dn%C3%ADch+ozdob+z+kor%C3%A1lk%C5%AF+%2812%2E12%2E2012%29" title="Sdílet na Twitteru [nové okno]" target="_blank"&gt;...&lt;/a&gt; is not clickable at point (686, 788). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.155)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D4411572+60802]
-	(No symbol) [0x00007FF7D438AC72]
-	(No symbol) [0x00007FF7D4247CE4]
-	(No symbol) [0x00007FF7D429E877]
-	(No symbol) [0x00007FF7D429C344]
-	(No symbol) [0x00007FF7D429980A]
-	(No symbol) [0x00007FF7D42989E2]
-	(No symbol) [0x00007FF7D428AE8B]
-	(No symbol) [0x00007FF7D42BAB7A]
-	(No symbol) [0x00007FF7D428A7C6]
-	(No symbol) [0x00007FF7D42BAD90]
-	(No symbol) [0x00007FF7D42DA224]
-	(No symbol) [0x00007FF7D42BA923]
-	(No symbol) [0x00007FF7D4288FEC]
-	(No symbol) [0x00007FF7D4289C21]
-	GetHandleVerifier [0x00007FF7D471420D+3217949]
-	GetHandleVerifier [0x00007FF7D47561A7+3488183]
-	GetHandleVerifier [0x00007FF7D474F12F+3459391]
-	GetHandleVerifier [0x00007FF7D44CB936+823622]
-	(No symbol) [0x00007FF7D439600F]
-	(No symbol) [0x00007FF7D4390F34]
-	(No symbol) [0x00007FF7D43910C2]
-	(No symbol) [0x00007FF7D4381914]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</msg>
-<arg>xpath=//li[@class='sdilet-x']/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-05-07T21:58:21.498760" elapsed="1.298902">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww%2Ecernahora%2Eeu%2Fvismo%2Fgalerie2%2Easp%3Fid%5Fgalerie%3D1024%26n%3Dvyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012%26p1%3D2189&amp;amp;text=V%C3%BDroba+v%C3%A1no%C4%8Dn%C3%ADch+ozdob+z+kor%C3%A1lk%C5%AF+%2812%2E12%2E2012%29" title="Sdílet na Twitteru [nové okno]" target="_blank"&gt;...&lt;/a&gt; is not clickable at point (686, 788). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.155)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D4411572+60802]
-	(No symbol) [0x00007FF7D438AC72]
-	(No symbol) [0x00007FF7D4247CE4]
-	(No symbol) [0x00007FF7D429E877]
-	(No symbol) [0x00007FF7D429C344]
-	(No symbol) [0x00007FF7D429980A]
-	(No symbol) [0x00007FF7D42989E2]
-	(No symbol) [0x00007FF7D428AE8B]
-	(No symbol) [0x00007FF7D42BAB7A]
-	(No symbol) [0x00007FF7D428A7C6]
-	(No symbol) [0x00007FF7D42BAD90]
-	(No symbol) [0x00007FF7D42DA224]
-	(No symbol) [0x00007FF7D42BA923]
-	(No symbol) [0x00007FF7D4288FEC]
-	(No symbol) [0x00007FF7D4289C21]
-	GetHandleVerifier [0x00007FF7D471420D+3217949]
-	GetHandleVerifier [0x00007FF7D47561A7+3488183]
-	GetHandleVerifier [0x00007FF7D474F12F+3459391]
-	GetHandleVerifier [0x00007FF7D44CB936+823622]
-	(No symbol) [0x00007FF7D439600F]
-	(No symbol) [0x00007FF7D4390F34]
-	(No symbol) [0x00007FF7D43910C2]
-	(No symbol) [0x00007FF7D4381914]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</status>
+<status status="PASS" start="2024-05-07T22:15:32.450805" elapsed="0.020283"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T22:15:37.472947" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-05-07T21:58:22.798663" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:15:32.472190" elapsed="5.000757"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:15:37.474070" level="INFO">Clicking element 'xpath=//li[@class='sdilet-x']/a'.</msg>
+<arg>xpath=//li[@class='sdilet-x']/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:15:37.472947" elapsed="0.080466"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T22:15:42.554699" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T22:15:37.554477" elapsed="5.000222"/>
 </kw>
 <kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:15:42.560087" level="INFO">${handles} = ['930D821E8D6CD4638130058AFF2FE08B', '80E7355D6E6C1CD3A7ED2D6EF67EEBFC']</msg>
 <var>${handles}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<status status="NOT RUN" start="2024-05-07T21:58:22.798663" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:15:42.554699" elapsed="0.005388"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>${handles}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-07T21:58:22.798663" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:15:42.560087" elapsed="0.069839"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:15:42.779791" level="INFO">${current_url} = https://twitter.com/intent/post?url=https%3A%2F%2Fwww.cernahora.eu%2Fvismo%2Fgalerie2.asp%3Fid_galerie%3D1024%26n%3Dvyroba-vanocnich-ozdob-z-koralku-12-12-2012%26p1%3D2189&amp;text=V%C3%BDroba+v%C3%A1no%C...</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="NOT RUN" start="2024-05-07T21:58:22.798663" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:15:42.629926" elapsed="0.149865"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>twitter.com</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2024-05-07T21:58:22.798663" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:15:42.779791" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-05-07T21:58:20.124848" elapsed="2.675143">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww%2Ecernahora%2Eeu%2Fvismo%2Fgalerie2%2Easp%3Fid%5Fgalerie%3D1024%26n%3Dvyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012%26p1%3D2189&amp;amp;text=V%C3%BDroba+v%C3%A1no%C4%8Dn%C3%ADch+ozdob+z+kor%C3%A1lk%C5%AF+%2812%2E12%2E2012%29" title="Sdílet na Twitteru [nové okno]" target="_blank"&gt;...&lt;/a&gt; is not clickable at point (686, 788). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
-  (Session info: chrome=124.0.6367.155)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D4411572+60802]
-	(No symbol) [0x00007FF7D438AC72]
-	(No symbol) [0x00007FF7D4247CE4]
-	(No symbol) [0x00007FF7D429E877]
-	(No symbol) [0x00007FF7D429C344]
-	(No symbol) [0x00007FF7D429980A]
-	(No symbol) [0x00007FF7D42989E2]
-	(No symbol) [0x00007FF7D428AE8B]
-	(No symbol) [0x00007FF7D42BAB7A]
-	(No symbol) [0x00007FF7D428A7C6]
-	(No symbol) [0x00007FF7D42BAD90]
-	(No symbol) [0x00007FF7D42DA224]
-	(No symbol) [0x00007FF7D42BA923]
-	(No symbol) [0x00007FF7D4288FEC]
-	(No symbol) [0x00007FF7D4289C21]
-	GetHandleVerifier [0x00007FF7D471420D+3217949]
-	GetHandleVerifier [0x00007FF7D47561A7+3488183]
-	GetHandleVerifier [0x00007FF7D474F12F+3459391]
-	GetHandleVerifier [0x00007FF7D44CB936+823622]
-	(No symbol) [0x00007FF7D439600F]
-	(No symbol) [0x00007FF7D4390F34]
-	(No symbol) [0x00007FF7D43910C2]
-	(No symbol) [0x00007FF7D4381914]
-	BaseThreadInitThunk [0x00007FFF62A9257D+29]
-	RtlUserThreadStart [0x00007FFF63C4AA48+40]
-</status>
+<status status="PASS" start="2024-05-07T22:15:30.767372" elapsed="12.013524"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:58:22.801052" elapsed="2.274227"/>
+<status status="PASS" start="2024-05-07T22:15:42.781907" elapsed="2.767839"/>
 </kw>
-<status status="FAIL" start="2024-05-07T21:58:17.534964" elapsed="7.540315"/>
+<status status="PASS" start="2024-05-07T22:15:26.443869" elapsed="19.105877"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TC003-003 - Sdílení fotoglerie z roku 2012 na X">TC003-003 - Sdílení fotoglerie z roku 2012 na X</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC003-003 - Sdílení fotoglerie z roku 2012 na X">TC003-003 - Sdílení fotoglerie z roku 2012 na X</stat>
 </suite>
 </statistics>
 <errors>

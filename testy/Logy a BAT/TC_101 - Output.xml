@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:52:49.653540" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:09:37.811668" rpa="false" schemaversion="5">
 <suite id="s1" name="TC101.kontrola otevreni odkazu mestys" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-001 Top menu\TC101.kontrola otevreni odkazu mestys.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:52:49.849904" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:09:38.007944" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:52:49.849397" elapsed="3.154073"/>
+<status status="PASS" start="2024-05-07T22:09:38.007944" elapsed="2.730406"/>
 </kw>
 <test id="s1-t1" name="Test Menu Navigation" line="8">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.004732" elapsed="0.038846"/>
+<status status="PASS" start="2024-05-07T22:09:40.740349" elapsed="0.045271"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>//a[contains(text(),'Městys')]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.043578" elapsed="0.020716"/>
+<status status="PASS" start="2024-05-07T22:09:40.786658" elapsed="0.030016"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:52:53.064294" level="INFO">Clicking element '//a[contains(text(),'Městys')]'.</msg>
+<msg time="2024-05-07T22:09:40.818013" level="INFO">Clicking element '//a[contains(text(),'Městys')]'.</msg>
 <arg>//a[contains(text(),'Městys')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.064294" elapsed="0.487816"/>
+<status status="PASS" start="2024-05-07T22:09:40.818013" elapsed="0.509370"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.552110" elapsed="0.014520"/>
+<status status="PASS" start="2024-05-07T22:09:41.327383" elapsed="0.013605"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:52:53.600834" level="INFO">${element_text} = O městysu</msg>
+<msg time="2024-05-07T22:09:41.362236" level="INFO">${element_text} = O městysu</msg>
 <var>${element_text}</var>
 <arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.567629" elapsed="0.033205"/>
+<status status="PASS" start="2024-05-07T22:09:41.340988" elapsed="0.022250"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${element_text}</arg>
 <arg>O městysu</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.601833" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:09:41.363238" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:52:53.003470" elapsed="0.598363"/>
+<status status="PASS" start="2024-05-07T22:09:40.739348" elapsed="0.624886"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:52:53.603347" elapsed="2.309826"/>
+<status status="PASS" start="2024-05-07T22:09:41.365267" elapsed="2.273812"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:52:49.655542" elapsed="6.257631"/>
+<status status="PASS" start="2024-05-07T22:09:37.814184" elapsed="5.824895"/>
 </suite>
 <statistics>
 <total>

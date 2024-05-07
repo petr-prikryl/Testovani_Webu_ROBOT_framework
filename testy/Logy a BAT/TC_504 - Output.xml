@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:37.801805" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:13:26.586423" rpa="false" schemaversion="5">
 <suite id="s1" name="TC504 -proklik na cookies" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC504 -proklik na cookies.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:56:37.986893" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:13:26.785466" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:56:37.986893" elapsed="3.051796"/>
+<status status="PASS" start="2024-05-07T22:13:26.785466" elapsed="2.739457"/>
 </kw>
 <test id="s1-t1" name="TestProklikuOwebu" line="8">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:41.039686" level="INFO">Clicking element 'xpath=//a[@href="/vismo/o-webu.asp#cookies"]'.</msg>
+<msg time="2024-05-07T22:13:29.525654" level="INFO">Clicking element 'xpath=//a[@href="/vismo/o-webu.asp#cookies"]'.</msg>
 <arg>xpath=//a[@href="/vismo/o-webu.asp#cookies"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:56:41.038689" elapsed="1.319807"/>
+<status status="PASS" start="2024-05-07T22:13:29.525654" elapsed="0.789155"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:42.370493" level="INFO">Current page contains element 'xpath=//h3[contains(@id, 'cookies')]'.</msg>
+<msg time="2024-05-07T22:13:30.327903" level="INFO">Current page contains element 'xpath=//h3[contains(@id, 'cookies')]'.</msg>
 <arg>xpath=//h3[contains(@id, 'cookies')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:56:42.358496" elapsed="0.011997"/>
+<status status="PASS" start="2024-05-07T22:13:30.315885" elapsed="0.012018"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:41.038689" elapsed="1.333314"/>
+<status status="PASS" start="2024-05-07T22:13:29.524923" elapsed="0.803980"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:56:42.373011" elapsed="2.261634"/>
+<status status="PASS" start="2024-05-07T22:13:30.329901" elapsed="2.256794"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:37.804806" elapsed="6.829839"/>
+<status status="PASS" start="2024-05-07T22:13:26.588426" elapsed="5.998269"/>
 </suite>
 <statistics>
 <total>

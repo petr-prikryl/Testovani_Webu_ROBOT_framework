@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:03:56.547689" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:14:43.137660" rpa="false" schemaversion="5">
 <suite id="s1" name="TC003-001 - Fotogalerie z roku 2012" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS003 - Fotogalerie\TC003-001 - Fotogalerie z roku 2012.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T22:03:56.731573" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:14:43.328039" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T22:03:56.730573" elapsed="2.491134"/>
+<status status="PASS" start="2024-05-07T22:14:43.328039" elapsed="2.777256"/>
 </kw>
 <test id="s1-t1" name="Test Fotogalerie 2012" line="7">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T22:03:59.222703" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
+<msg time="2024-05-07T22:14:46.106338" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
 <arg>xpath=//a[@href='/fotogalerie/ms-55/p1=12583']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T22:03:59.222703" elapsed="0.509187"/>
+<status status="PASS" start="2024-05-07T22:14:46.106338" elapsed="0.492268"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Fotogalerie')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T22:03:59.731890" elapsed="0.032404"/>
+<status status="PASS" start="2024-05-07T22:14:46.598606" elapsed="0.019217"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T22:03:59.765301" level="INFO">Clicking element 'xpath=//a[@href='/2012/ms-2189/p1=2189']'.</msg>
+<msg time="2024-05-07T22:14:46.618824" level="INFO">Clicking element 'xpath=//a[@href='/2012/ms-2189/p1=2189']'.</msg>
 <arg>xpath=//a[@href='/2012/ms-2189/p1=2189']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T22:03:59.765301" elapsed="0.425444"/>
+<status status="PASS" start="2024-05-07T22:14:46.618824" elapsed="0.404403"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), '2012')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T22:04:00.190745" elapsed="0.028926"/>
+<status status="PASS" start="2024-05-07T22:14:47.023227" elapsed="0.023219"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T22:04:00.219671" level="INFO">Clicking element 'xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']'.</msg>
+<msg time="2024-05-07T22:14:47.046446" level="INFO">Clicking element 'xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']'.</msg>
 <arg>xpath=//a[@href='/vyroba%2Dvanocnich%2Dozdob%2Dz%2Dkoralku%2D12%2D12%2D2012/gs-1024/p1=2189']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T22:04:00.219671" elapsed="0.402834"/>
+<status status="PASS" start="2024-05-07T22:14:47.046446" elapsed="0.485579"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Výroba vánočních ozdob z korálků (12.12.2012)')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T22:04:00.622505" elapsed="0.018461"/>
+<status status="PASS" start="2024-05-07T22:14:47.532025" elapsed="0.019474"/>
 </kw>
-<status status="PASS" start="2024-05-07T22:03:59.221707" elapsed="1.419259"/>
+<status status="PASS" start="2024-05-07T22:14:46.105295" elapsed="1.446204"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T22:04:00.641973" elapsed="2.239551"/>
+<status status="PASS" start="2024-05-07T22:14:47.552500" elapsed="2.274604"/>
 </kw>
-<status status="PASS" start="2024-05-07T22:03:56.549125" elapsed="6.332399"/>
+<status status="PASS" start="2024-05-07T22:14:43.138667" elapsed="6.688437"/>
 </suite>
 <statistics>
 <total>

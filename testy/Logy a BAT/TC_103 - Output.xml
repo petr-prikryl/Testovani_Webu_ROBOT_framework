@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:53:11.028283" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:09:58.106703" rpa="false" schemaversion="5">
 <suite id="s1" name="TC103-kontrola prekladu do anlictiny" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-001 Top menu\TC103-kontrola prekladu do anlictiny.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:53:11.223922" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:09:58.297841" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:53:11.223922" elapsed="3.371486"/>
+<status status="PASS" start="2024-05-07T22:09:58.297841" elapsed="2.423190"/>
 </kw>
 <test id="s1-t1" name="Maximize Browser Window" line="8">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//select[@id='google_translate_element_volgte_select']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:53:14.596692" elapsed="0.851690"/>
+<status status="PASS" start="2024-05-07T22:10:00.722043" elapsed="0.858203"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:53:15.448382" level="INFO">Selecting options from selection list 'id=google_translate_element_volgte_select' by value en.</msg>
+<msg time="2024-05-07T22:10:01.581243" level="INFO">Selecting options from selection list 'id=google_translate_element_volgte_select' by value en.</msg>
 <arg>id=google_translate_element_volgte_select</arg>
 <arg>en</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.448382" elapsed="0.067330"/>
+<status status="PASS" start="2024-05-07T22:10:01.581243" elapsed="0.071777"/>
 </kw>
 <kw name="Get Selected List Value" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:53:15.617213" level="INFO">${selected_language} = en</msg>
+<msg time="2024-05-07T22:10:01.697282" level="INFO">${selected_language} = en</msg>
 <var>${selected_language}</var>
 <arg>id=google_translate_element_volgte_select</arg>
 <doc>Returns the value of selected option from selection list ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.516708" elapsed="0.100505"/>
+<status status="PASS" start="2024-05-07T22:10:01.653527" elapsed="0.043755"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${selected_language}</arg>
 <arg>en</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.617213" elapsed="0.000997"/>
+<status status="PASS" start="2024-05-07T22:10:01.698297" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//font[text()='Office']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.618210" elapsed="0.217223"/>
+<status status="PASS" start="2024-05-07T22:10:01.698297" elapsed="0.243081"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:53:15.854652" level="INFO">${font_text} = Office</msg>
+<msg time="2024-05-07T22:10:01.985431" level="INFO">${font_text} = Office</msg>
 <var>${font_text}</var>
 <arg>xpath=//font[text()='Office']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.836431" elapsed="0.018221"/>
+<status status="PASS" start="2024-05-07T22:10:01.941378" elapsed="0.044053"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${font_text}</arg>
 <arg>Office</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.855660" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:10:01.985431" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:53:14.595408" elapsed="1.260252"/>
+<status status="PASS" start="2024-05-07T22:10:00.721031" elapsed="1.265399"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:53:15.856659" elapsed="2.235779"/>
+<status status="PASS" start="2024-05-07T22:10:01.986430" elapsed="2.259865"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:53:11.030285" elapsed="7.062153"/>
+<status status="PASS" start="2024-05-07T22:09:58.107783" elapsed="6.138512"/>
 </suite>
 <statistics>
 <total>

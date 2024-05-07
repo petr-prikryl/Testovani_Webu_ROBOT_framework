@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:04.944844" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:12:52.538490" rpa="false" schemaversion="5">
 <suite id="s1" name="TC501 - proklikk na Vodárenská" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC501 - proklikk na Vodárenská.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:56:05.154891" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:12:52.729742" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:56:05.153689" elapsed="2.324708"/>
+<status status="PASS" start="2024-05-07T22:12:52.729742" elapsed="2.412263"/>
 </kw>
 <test id="s1-t1" name="Open Links and Verify URLs" line="8">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:07.479732" level="INFO">Clicking element 'xpath=//img[@alt='Vodárenská a.s.']'.</msg>
+<msg time="2024-05-07T22:12:55.143001" level="INFO">Clicking element 'xpath=//img[@alt='Vodárenská a.s.']'.</msg>
 <arg>xpath=//img[@alt='Vodárenská a.s.']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:56:07.478397" elapsed="0.107179"/>
+<status status="PASS" start="2024-05-07T22:12:55.143001" elapsed="0.112815"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:56:07.585576" elapsed="0.017255"/>
+<status status="PASS" start="2024-05-07T22:12:55.257173" elapsed="0.017669"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>vodarenska.cz</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:56:07.602831" elapsed="3.623757"/>
+<status status="PASS" start="2024-05-07T22:12:55.276049" elapsed="3.622692"/>
 </kw>
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:11.232105" level="INFO">Current location is 'https://vodarenska.cz/divize-boskovice/'.</msg>
+<msg time="2024-05-07T22:12:58.916702" level="INFO">Current location is 'https://vodarenska.cz/divize-boskovice/'.</msg>
 <arg>https://vodarenska.cz/divize-boskovice/</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:56:11.226588" elapsed="0.005517"/>
+<status status="PASS" start="2024-05-07T22:12:58.898741" elapsed="0.017961"/>
 </kw>
 <kw name="Close Window" owner="SeleniumLibrary">
 <doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" start="2024-05-07T21:56:11.232105" elapsed="0.067708"/>
+<status status="PASS" start="2024-05-07T22:12:58.916702" elapsed="0.059188"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:07.478397" elapsed="3.821920"/>
+<status status="PASS" start="2024-05-07T22:12:55.142005" elapsed="3.834884"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:56:11.301323" elapsed="2.226459"/>
+<status status="PASS" start="2024-05-07T22:12:58.977888" elapsed="2.256078"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:04.946035" elapsed="8.581747"/>
+<status status="PASS" start="2024-05-07T22:12:52.540491" elapsed="8.693475"/>
 </suite>
 <statistics>
 <total>

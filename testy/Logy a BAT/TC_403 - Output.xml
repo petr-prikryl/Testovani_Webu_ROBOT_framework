@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:55:32.196103" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:12:18.286812" rpa="false" schemaversion="5">
 <suite id="s1" name="TC403 proklik na akci 9unor" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-004 Kalendar\TC403 proklik na akci 9unor.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:55:32.385353" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:12:18.475410" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:55:32.383895" elapsed="2.395583"/>
+<status status="PASS" start="2024-05-07T22:12:18.475410" elapsed="2.822906"/>
 </kw>
 <test id="s1-t1" name="Verify Calendar Navigation" line="8">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:34.780966" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
+<msg time="2024-05-07T22:12:21.299313" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
 <arg>xpath=//a[@class='sipka l']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:34.780966" elapsed="0.507345"/>
+<status status="PASS" start="2024-05-07T22:12:21.298316" elapsed="0.911164"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:35.301371" level="INFO">Current page contains element 'xpath=//a[text()='Duben 2024']'.</msg>
+<msg time="2024-05-07T22:12:22.231480" level="INFO">Current page contains element 'xpath=//a[text()='Duben 2024']'.</msg>
 <arg>xpath=//a[text()='Duben 2024']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:35.288311" elapsed="0.013060"/>
+<status status="PASS" start="2024-05-07T22:12:22.210482" elapsed="0.020998"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:35.302372" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
+<msg time="2024-05-07T22:12:22.232485" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
 <arg>xpath=//a[@class='sipka l']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:35.301371" elapsed="0.482762"/>
+<status status="PASS" start="2024-05-07T22:12:22.232485" elapsed="0.868098"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:35.806130" level="INFO">Current page contains element 'xpath=//a[text()='Březen 2024']'.</msg>
+<msg time="2024-05-07T22:12:23.114441" level="INFO">Current page contains element 'xpath=//a[text()='Březen 2024']'.</msg>
 <arg>xpath=//a[text()='Březen 2024']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:35.785133" elapsed="0.021992"/>
+<status status="PASS" start="2024-05-07T22:12:23.101593" elapsed="0.012848"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:35.807125" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
+<msg time="2024-05-07T22:12:23.115442" level="INFO">Clicking element 'xpath=//a[@class='sipka l']'.</msg>
 <arg>xpath=//a[@class='sipka l']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:35.807125" elapsed="0.417806"/>
+<status status="PASS" start="2024-05-07T22:12:23.115442" elapsed="0.492536"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:36.241091" level="INFO">Current page contains element 'xpath=//a[text()='Únor 2024']'.</msg>
+<msg time="2024-05-07T22:12:23.633976" level="INFO">Current page contains element 'xpath=//a[text()='Únor 2024']'.</msg>
 <arg>xpath=//a[text()='Únor 2024']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:36.226227" elapsed="0.014864"/>
+<status status="PASS" start="2024-05-07T22:12:23.608987" elapsed="0.024989"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//td[@class='wkday done']/a[text()='9']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:55:36.241091" elapsed="0.029231"/>
+<status status="PASS" start="2024-05-07T22:12:23.633976" elapsed="0.032423"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:36.270322" level="INFO">Clicking element 'xpath=//td[@class='wkday done']/a[text()='9']'.</msg>
+<msg time="2024-05-07T22:12:23.667423" level="INFO">Clicking element 'xpath=//td[@class='wkday done']/a[text()='9']'.</msg>
 <arg>xpath=//td[@class='wkday done']/a[text()='9']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:36.270322" elapsed="0.528744"/>
+<status status="PASS" start="2024-05-07T22:12:23.667423" elapsed="0.520440"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:36.811612" level="INFO">Current page contains element 'xpath=//a[@href="/pochovavani%2Dbasy/a-1914"]'.</msg>
+<msg time="2024-05-07T22:12:24.200355" level="INFO">Current page contains element 'xpath=//a[@href="/pochovavani%2Dbasy/a-1914"]'.</msg>
 <arg>xpath=//a[@href="/pochovavani%2Dbasy/a-1914"]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:36.800068" elapsed="0.011544"/>
+<status status="PASS" start="2024-05-07T22:12:24.188862" elapsed="0.011493"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:55:34.779478" elapsed="2.033676"/>
+<status status="PASS" start="2024-05-07T22:12:21.298316" elapsed="2.903114"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:55:36.814162" elapsed="2.292402"/>
+<status status="PASS" start="2024-05-07T22:12:24.202711" elapsed="2.282160"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:55:32.197109" elapsed="6.909455"/>
+<status status="PASS" start="2024-05-07T22:12:18.288814" elapsed="8.196562"/>
 </suite>
 <statistics>
 <total>

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:59.040753" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:13:48.429718" rpa="false" schemaversion="5">
 <suite id="s1" name="TC506 - kontrola zobrazeni captcha" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC506 - kontrola zobrazeni captcha.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:56:59.232272" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:13:48.616709" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:56:59.231271" elapsed="2.393304"/>
+<status status="PASS" start="2024-05-07T22:13:48.615252" elapsed="2.626599"/>
 </kw>
 <test id="s1-t1" name="testcaptchi" line="8">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:01.625571" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
+<msg time="2024-05-07T22:13:51.244295" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
 <arg>css:button.btn[name="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:01.625571" elapsed="0.077968"/>
+<status status="PASS" start="2024-05-07T22:13:51.243286" elapsed="0.114080"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="volrecaptcha0"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:57:01.703781" elapsed="0.025457"/>
+<status status="PASS" start="2024-05-07T22:13:51.358363" elapsed="0.032090"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:57:01.624575" elapsed="0.104798"/>
+<status status="PASS" start="2024-05-07T22:13:51.241851" elapsed="0.149662"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:57:01.729881" elapsed="2.213596"/>
+<status status="PASS" start="2024-05-07T22:13:51.392640" elapsed="2.240305"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:59.041756" elapsed="4.901721"/>
+<status status="PASS" start="2024-05-07T22:13:48.431721" elapsed="5.201224"/>
 </suite>
 <statistics>
 <total>

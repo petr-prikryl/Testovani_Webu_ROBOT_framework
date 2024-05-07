@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:52:39.289558" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:09:27.050491" rpa="false" schemaversion="5">
 <suite id="s1" name="TC100-kontrola otevreni odkazu urad" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-001 Top menu\TC100-kontrola otevreni odkazu urad.robot">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Otevrit" owner="object_repository">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:52:39.537106" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:09:27.257647" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:52:39.536110" elapsed="2.659237"/>
+<status status="PASS" start="2024-05-07T22:09:27.256647" elapsed="2.953136"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:52:39.536110" elapsed="2.659237"/>
+<status status="PASS" start="2024-05-07T22:09:27.256647" elapsed="2.954136"/>
 </kw>
 <arg>Otevrit</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2024-05-07T21:52:39.535104" elapsed="2.660243"/>
+<status status="PASS" start="2024-05-07T22:09:27.256647" elapsed="2.954136"/>
 </kw>
 <test id="s1-t1" name="Test Menu Navigation" line="8">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.196341" elapsed="0.037956"/>
+<status status="PASS" start="2024-05-07T22:09:30.211783" elapsed="0.069798"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>//a[contains(text(),'Úřad')]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.236993" elapsed="0.014133"/>
+<status status="PASS" start="2024-05-07T22:09:30.282580" elapsed="0.029577"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:52:42.252138" level="INFO">Clicking element '//a[contains(text(),'Úřad')]'.</msg>
+<msg time="2024-05-07T22:09:30.312157" level="INFO">Clicking element '//a[contains(text(),'Úřad')]'.</msg>
 <arg>//a[contains(text(),'Úřad')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.251126" elapsed="0.608058"/>
+<status status="PASS" start="2024-05-07T22:09:30.312157" elapsed="0.682525"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.859184" elapsed="0.011656"/>
+<status status="PASS" start="2024-05-07T22:09:30.994682" elapsed="0.011974"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:52:42.890322" level="INFO">${element_text} = Adresa</msg>
+<msg time="2024-05-07T22:09:31.030191" level="INFO">${element_text} = Adresa</msg>
 <var>${element_text}</var>
 <arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.870840" elapsed="0.019482"/>
+<status status="PASS" start="2024-05-07T22:09:31.007684" elapsed="0.022507"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${element_text}</arg>
 <arg>Adresa</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.891324" elapsed="0.000506"/>
+<status status="PASS" start="2024-05-07T22:09:31.030191" elapsed="0.001011"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:52:42.195347" elapsed="0.696483"/>
+<status status="PASS" start="2024-05-07T22:09:30.210783" elapsed="0.820419"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:52:42.891830" elapsed="2.265058"/>
+<status status="PASS" start="2024-05-07T22:09:31.032204" elapsed="2.278018"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:52:39.292076" elapsed="5.864812"/>
+<status status="PASS" start="2024-05-07T22:09:27.053496" elapsed="6.256726"/>
 </suite>
 <statistics>
 <total>

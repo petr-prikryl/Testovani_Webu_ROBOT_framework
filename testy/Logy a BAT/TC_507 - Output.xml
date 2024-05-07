@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:57:08.405858" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:13:58.091451" rpa="false" schemaversion="5">
 <suite id="s1" name="TC507 - proklik na Zobrazit na mapě" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC507 - proklik na Zobrazit na mapě.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:57:08.590507" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:13:58.279884" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:57:08.590507" elapsed="2.420150"/>
+<status status="PASS" start="2024-05-07T22:13:58.279884" elapsed="2.735249"/>
 </kw>
 <test id="s1-t1" name="Test Click Link and Verify 404 Page" line="8">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.012026" elapsed="0.033361"/>
+<status status="PASS" start="2024-05-07T22:14:01.016569" elapsed="0.034369"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:11.047725" level="INFO">Clicking link 'Zobrazit na mapě'.</msg>
+<msg time="2024-05-07T22:14:01.051937" level="INFO">Clicking link 'Zobrazit na mapě'.</msg>
 <arg>${LINK_TEXT22}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.046713" elapsed="0.456826"/>
+<status status="PASS" start="2024-05-07T22:14:01.050938" elapsed="0.426340"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath://h2[@class='cvi']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.503539" elapsed="0.010515"/>
+<status status="PASS" start="2024-05-07T22:14:01.477278" elapsed="0.012767"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:11.532060" level="INFO">${actual_text} = Stránka nebyla nalezena (kód 404)</msg>
+<msg time="2024-05-07T22:14:01.508929" level="INFO">${actual_text} = Stránka nebyla nalezena (kód 404)</msg>
 <var>${actual_text}</var>
 <arg>xpath://h2[@class='cvi']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.514054" elapsed="0.018006"/>
+<status status="PASS" start="2024-05-07T22:14:01.490045" elapsed="0.018884"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${actual_text}</arg>
 <arg>${EXPECTED_TEXT22}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.533055" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:14:01.509928" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:57:11.010657" elapsed="0.522398"/>
+<status status="PASS" start="2024-05-07T22:14:01.015133" elapsed="0.495794"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:57:11.534056" elapsed="2.214784"/>
+<status status="PASS" start="2024-05-07T22:14:01.511928" elapsed="2.247863"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:57:08.407866" elapsed="5.340974"/>
+<status status="PASS" start="2024-05-07T22:13:58.093454" elapsed="5.666337"/>
 </suite>
 <statistics>
 <total>

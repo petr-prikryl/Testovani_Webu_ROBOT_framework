@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:55:21.725070" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:12:07.335017" rpa="false" schemaversion="5">
 <suite id="s1" name="TC402 proklik na akci 15cerven" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-004 Kalendar\TC402 proklik na akci 15cerven.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:55:21.908121" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:12:07.522372" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:55:21.907120" elapsed="2.346759"/>
+<status status="PASS" start="2024-05-07T22:12:07.522372" elapsed="2.614501"/>
 </kw>
 <test id="s1-t1" name="Verify Calendar Navigation" line="8">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:24.266941" level="INFO">Current page contains element 'xpath=//a[text()='Květen 2024']'.</msg>
+<msg time="2024-05-07T22:12:10.158883" level="INFO">Current page contains element 'xpath=//a[text()='Květen 2024']'.</msg>
 <arg>xpath=//a[text()='Květen 2024']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:24.254874" elapsed="0.012067"/>
+<status status="PASS" start="2024-05-07T22:12:10.137873" elapsed="0.021010"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:24.268418" level="INFO">Clicking element 'xpath=//a[@class='sipka p']'.</msg>
+<msg time="2024-05-07T22:12:10.159881" level="INFO">Clicking element 'xpath=//a[@class='sipka p']'.</msg>
 <arg>xpath=//a[@class='sipka p']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:24.268418" elapsed="0.561605"/>
+<status status="PASS" start="2024-05-07T22:12:10.159881" elapsed="0.571402"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:24.851330" level="INFO">Current page contains element 'xpath=//a[text()='Červen 2024']'.</msg>
+<msg time="2024-05-07T22:12:10.757140" level="INFO">Current page contains element 'xpath=//a[text()='Červen 2024']'.</msg>
 <arg>xpath=//a[text()='Červen 2024']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:24.831037" elapsed="0.020293"/>
+<status status="PASS" start="2024-05-07T22:12:10.731283" elapsed="0.025857"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//td[@class='wkday']/a[text()='15']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:55:24.852327" elapsed="0.024787"/>
+<status status="PASS" start="2024-05-07T22:12:10.757140" elapsed="0.031455"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:24.877114" level="INFO">Clicking element 'xpath=//td[@class='wkday']/a[text()='15']'.</msg>
+<msg time="2024-05-07T22:12:10.789598" level="INFO">Clicking element 'xpath=//td[@class='wkday']/a[text()='15']'.</msg>
 <arg>xpath=//td[@class='wkday']/a[text()='15']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:55:24.877114" elapsed="0.529999"/>
+<status status="PASS" start="2024-05-07T22:12:10.789598" elapsed="0.694515"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:55:25.419009" level="INFO">Current page contains element 'xpath=//a[@href='/detsky%2Dden/a-1920']'.</msg>
+<msg time="2024-05-07T22:12:11.496126" level="INFO">Current page contains element 'xpath=//a[@href='/detsky%2Dden/a-1920']'.</msg>
 <arg>xpath=//a[@href='/detsky%2Dden/a-1920']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:55:25.407113" elapsed="0.011896"/>
+<status status="PASS" start="2024-05-07T22:12:11.485121" elapsed="0.011005"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:55:24.253879" elapsed="1.166125"/>
+<status status="PASS" start="2024-05-07T22:12:10.136873" elapsed="1.360247"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:55:25.421004" elapsed="2.262269"/>
+<status status="PASS" start="2024-05-07T22:12:11.498119" elapsed="2.315678"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:55:21.726080" elapsed="5.957193"/>
+<status status="PASS" start="2024-05-07T22:12:07.337001" elapsed="6.476796"/>
 </suite>
 <statistics>
 <total>

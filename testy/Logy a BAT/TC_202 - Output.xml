@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:54:07.770920" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:10:54.201895" rpa="false" schemaversion="5">
 <suite id="s1" name="TC202-prepnuti stranky u vysledku vyhladavni" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-002 Hledani\TC202-prepnuti stranky u vysledku vyhladavni.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:54:07.957601" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:10:54.388403" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:54:07.957601" elapsed="2.433107"/>
+<status status="PASS" start="2024-05-07T22:10:54.388403" elapsed="2.373605"/>
 </kw>
 <test id="s1-t1" name="Test Hledani" line="10">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:54:10.391722" elapsed="0.037546"/>
+<status status="PASS" start="2024-05-07T22:10:56.763008" elapsed="0.036234"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:10.430277" level="INFO">Clicking element 'xpath=//a[contains(@class, 'fullscreen-search-anchor')]'.</msg>
+<msg time="2024-05-07T22:10:56.800239" level="INFO">Clicking element 'xpath=//a[contains(@class, 'fullscreen-search-anchor')]'.</msg>
 <arg>xpath=//a[contains(@class, 'fullscreen-search-anchor')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:10.430277" elapsed="0.063450"/>
+<status status="PASS" start="2024-05-07T22:10:56.800239" elapsed="0.076052"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:10.494718" level="INFO">Typing text 'matrika' into text field 'id=hl'.</msg>
+<msg time="2024-05-07T22:10:56.877312" level="INFO">Typing text 'matrika' into text field 'id=hl'.</msg>
 <arg>id=hl</arg>
 <arg>matrika</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:10.494718" elapsed="0.078663"/>
+<status status="PASS" start="2024-05-07T22:10:56.877312" elapsed="0.076634"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:10.574401" level="INFO">Clicking button 'css=.fullscreen-search-button'.</msg>
+<msg time="2024-05-07T22:10:56.953946" level="INFO">Clicking button 'css=.fullscreen-search-button'.</msg>
 <arg>css=.fullscreen-search-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:10.574401" elapsed="5.091959"/>
+<status status="PASS" start="2024-05-07T22:10:56.953946" elapsed="6.068256"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:15.666360" level="INFO">Clicking element 'link=2'.</msg>
+<msg time="2024-05-07T22:11:03.023200" level="INFO">Clicking element 'link=2'.</msg>
 <arg>link=2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:15.666360" elapsed="5.783011"/>
+<status status="PASS" start="2024-05-07T22:11:03.023200" elapsed="5.217524"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:21.465136" level="INFO">Current page contains element 'xpath=//a[contains(text(),'Žádost o povolení uzavřít manželství na jiném vhodném místě')]'.</msg>
-<msg time="2024-05-07T21:54:21.465136" level="INFO">${link_visible} = None</msg>
+<msg time="2024-05-07T22:11:08.256146" level="INFO">Current page contains element 'xpath=//a[contains(text(),'Žádost o povolení uzavřít manželství na jiném vhodném místě')]'.</msg>
+<msg time="2024-05-07T22:11:08.257574" level="INFO">${link_visible} = None</msg>
 <var>${link_visible}</var>
 <arg>xpath=//a[contains(text(),'${Expected Link Text}')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:54:21.449371" elapsed="0.015765"/>
+<status status="PASS" start="2024-05-07T22:11:08.240724" elapsed="0.016850"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:54:10.391722" elapsed="11.074408"/>
+<status status="PASS" start="2024-05-07T22:10:56.762008" elapsed="11.495566"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:54:21.467131" elapsed="2.363733"/>
+<status status="PASS" start="2024-05-07T22:11:08.258656" elapsed="2.336670"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:54:07.772930" elapsed="16.057934"/>
+<status status="PASS" start="2024-05-07T22:10:54.203894" elapsed="16.391432"/>
 </suite>
 <statistics>
 <total>

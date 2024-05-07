@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:27.894790" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:13:15.703517" rpa="false" schemaversion="5">
 <suite id="s1" name="TC503 - proklik na o webu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC503 - proklik na o webu.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:56:28.078862" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:13:15.900462" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:56:28.078862" elapsed="2.295918"/>
+<status status="PASS" start="2024-05-07T22:13:15.900462" elapsed="2.648692"/>
 </kw>
 <test id="s1-t1" name="TestProklikuOwebu" line="8">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:30.376503" level="INFO">Clicking element 'xpath=//a[@href='/vismo/o-webu.asp']'.</msg>
+<msg time="2024-05-07T22:13:18.550478" level="INFO">Clicking element 'xpath=//a[@href='/vismo/o-webu.asp']'.</msg>
 <arg>xpath=//a[@href='/vismo/o-webu.asp']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:56:30.376503" elapsed="0.686627"/>
+<status status="PASS" start="2024-05-07T22:13:18.550478" elapsed="1.310754"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:56:31.075075" level="INFO">Current page contains element 'xpath=//h2[@class='cvi' and contains(text(), 'O webu')]'.</msg>
+<msg time="2024-05-07T22:13:19.874491" level="INFO">Current page contains element 'xpath=//h2[@class='cvi' and contains(text(), 'O webu')]'.</msg>
 <arg>xpath=//h2[@class='cvi' and contains(text(), 'O webu')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:56:31.064130" elapsed="0.010945"/>
+<status status="PASS" start="2024-05-07T22:13:19.861232" elapsed="0.013259"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:30.374780" elapsed="0.701305"/>
+<status status="PASS" start="2024-05-07T22:13:18.549154" elapsed="1.326342"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:56:31.077085" elapsed="2.271414"/>
+<status status="PASS" start="2024-05-07T22:13:19.876535" elapsed="2.249219"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:56:27.896961" elapsed="5.452050"/>
+<status status="PASS" start="2024-05-07T22:13:15.705517" elapsed="6.420237"/>
 </suite>
 <statistics>
 <total>

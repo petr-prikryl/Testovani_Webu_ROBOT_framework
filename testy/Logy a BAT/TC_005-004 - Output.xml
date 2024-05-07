@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:59:16.105943" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:16:41.814290" rpa="false" schemaversion="5">
 <suite id="s1" name="TC005-004 - Kontrola příhlášení - špatné heslo" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS005 - Prihlaseni\TC005-004 - Kontrola příhlášení - špatné heslo.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:59:16.289576" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:16:42.038762" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:59:16.288577" elapsed="3.033361"/>
+<status status="PASS" start="2024-05-07T22:16:42.037767" elapsed="2.734805"/>
 </kw>
 <test id="s1-t1" name="Test Login And Verify Username" line="11">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:59:19.322947" elapsed="0.031306"/>
+<status status="PASS" start="2024-05-07T22:16:44.773768" elapsed="0.055834"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:19.355254" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
+<msg time="2024-05-07T22:16:44.830602" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
 <arg>xpath=${Login Link XPath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:19.355254" elapsed="0.491076"/>
+<status status="PASS" start="2024-05-07T22:16:44.829602" elapsed="0.654976"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[@class="cvi" and text()="Přihlášení uživatele"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:59:19.846330" elapsed="0.022761"/>
+<status status="PASS" start="2024-05-07T22:16:45.485590" elapsed="0.025002"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:19.870094" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
+<msg time="2024-05-07T22:16:45.511588" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
 <arg>id=login</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:19.869091" elapsed="0.104670"/>
+<status status="PASS" start="2024-05-07T22:16:45.510592" elapsed="0.105878"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:19.974779" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-05-07T21:59:20.015280" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-05-07T22:16:45.617455" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-05-07T22:16:45.686876" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${2ndPassword}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:19.974779" elapsed="0.086677"/>
+<status status="PASS" start="2024-05-07T22:16:45.617455" elapsed="0.121202"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:20.061962" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
+<msg time="2024-05-07T22:16:45.738657" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
 <arg>xpath=${Login Button XPath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:20.061962" elapsed="0.255146"/>
+<status status="PASS" start="2024-05-07T22:16:45.738657" elapsed="0.170830"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-07T21:59:22.318596" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-07T22:16:47.911002" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-07T21:59:20.317108" elapsed="2.001488"/>
+<status status="PASS" start="2024-05-07T22:16:45.910490" elapsed="2.000512"/>
 </kw>
 <kw name="Alert Should Be Present" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:22.320113" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2024-05-07T22:16:47.912012" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>${Popup}</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<status status="PASS" start="2024-05-07T21:59:22.319107" elapsed="0.005171"/>
+<status status="PASS" start="2024-05-07T22:16:47.911002" elapsed="0.005011"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:59:19.321938" elapsed="3.002340"/>
+<status status="PASS" start="2024-05-07T22:16:44.773768" elapsed="3.143244"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:59:22.325287" elapsed="2.219775"/>
+<status status="PASS" start="2024-05-07T22:16:47.918026" elapsed="2.299290"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:59:16.106946" elapsed="8.438116"/>
+<status status="PASS" start="2024-05-07T22:16:41.817287" elapsed="8.400029"/>
 </suite>
 <statistics>
 <total>

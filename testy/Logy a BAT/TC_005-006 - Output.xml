@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:59:40.098041" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:17:06.761307" rpa="false" schemaversion="5">
 <suite id="s1" name="TC005-006 - Proklik na neexistující diskuzní fórum přes přihlášeného uživatele" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS005 - Prihlaseni\TC005-006 - Proklik na neexistující diskuzní fórum přes přihlášeného uživatele.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:59:40.295595" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:17:06.960270" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:59:40.294594" elapsed="3.344223"/>
+<status status="PASS" start="2024-05-07T22:17:06.959212" elapsed="3.099377"/>
 </kw>
 <test id="s1-t1" name="Test Login And Verify Username" line="10">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:59:43.639822" elapsed="0.027975"/>
+<status status="PASS" start="2024-05-07T22:17:10.059590" elapsed="0.030750"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:43.668804" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
+<msg time="2024-05-07T22:17:10.091340" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
 <arg>xpath=${Login Link XPath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:43.667797" elapsed="0.460651"/>
+<status status="PASS" start="2024-05-07T22:17:10.090340" elapsed="1.103341"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[@class="cvi" and text()="Přihlášení uživatele"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.129524" elapsed="0.021766"/>
+<status status="PASS" start="2024-05-07T22:17:11.193681" elapsed="0.034436"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:44.152338" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
+<msg time="2024-05-07T22:17:11.228117" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
 <arg>id=login</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.152338" elapsed="0.105868"/>
+<status status="PASS" start="2024-05-07T22:17:11.228117" elapsed="0.082015"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:44.259213" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-05-07T21:59:44.306025" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-05-07T22:17:11.311132" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-05-07T22:17:11.352579" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=password</arg>
 <arg>${Password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.259213" elapsed="0.098234"/>
+<status status="PASS" start="2024-05-07T22:17:11.311132" elapsed="0.094681"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:44.358454" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
+<msg time="2024-05-07T22:17:11.406823" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
 <arg>xpath=${Login Button XPath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.357447" elapsed="0.479864"/>
+<status status="PASS" start="2024-05-07T22:17:11.406823" elapsed="0.552220"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.838720" elapsed="0.015760"/>
+<status status="PASS" start="2024-05-07T22:17:11.960087" elapsed="0.015276"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:44.873693" level="INFO">${Displayed Username} = Petr petr@prikryl.cc (petr@prikryl.cc)</msg>
+<msg time="2024-05-07T22:17:12.003524" level="INFO">${Displayed Username} = Petr petr@prikryl.cc (petr@prikryl.cc)</msg>
 <var>${Displayed Username}</var>
 <arg>xpath=//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.854480" elapsed="0.019213"/>
+<status status="PASS" start="2024-05-07T22:17:11.976541" elapsed="0.026983"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${Displayed Username}</arg>
 <arg>${Expected Username}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.874703" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T22:17:12.004522" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:59:44.874703" level="INFO">Clicking element 'xpath=//a[@href="/diskuze/" and contains(@title, "Diskuzní fórum")]'.</msg>
+<msg time="2024-05-07T22:17:12.004522" level="INFO">Clicking element 'xpath=//a[@href="/diskuze/" and contains(@title, "Diskuzní fórum")]'.</msg>
 <arg>xpath=${DISKUZE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:59:44.874703" elapsed="0.297022"/>
+<status status="PASS" start="2024-05-07T22:17:12.004522" elapsed="0.380809"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[@class="cvi" and text()="Stránka nebyla nalezena (kód 404)"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:59:45.171725" elapsed="0.030029"/>
+<status status="PASS" start="2024-05-07T22:17:12.386333" elapsed="0.024016"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:59:43.638817" elapsed="1.562937"/>
+<status status="PASS" start="2024-05-07T22:17:10.058589" elapsed="2.351760"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:59:45.203262" elapsed="2.210748"/>
+<status status="PASS" start="2024-05-07T22:17:12.411387" elapsed="2.302300"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:59:40.100043" elapsed="7.313967"/>
+<status status="PASS" start="2024-05-07T22:17:06.763357" elapsed="7.950330"/>
 </suite>
 <statistics>
 <total>

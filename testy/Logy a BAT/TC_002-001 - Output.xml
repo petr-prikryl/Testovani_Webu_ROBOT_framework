@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:57:18.236496" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:14:08.218224" rpa="false" schemaversion="5">
 <suite id="s1" name="TC002-001 - Úřední deska ke dni 25042024" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS002 -  Uredni deska\TC002-001 - Úřední deska ke dni 25042024.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:57:18.424052" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:14:08.404059" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:57:18.424052" elapsed="2.399986"/>
+<status status="PASS" start="2024-05-07T22:14:08.403063" elapsed="2.472052"/>
 </kw>
 <test id="s1-t1" name="Click Link And Verify Header" line="8">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:20.825046" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
+<msg time="2024-05-07T22:14:10.876116" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
 <arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:20.825046" elapsed="0.969732"/>
+<status status="PASS" start="2024-05-07T22:14:10.875115" elapsed="1.056445"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-07T21:57:21.794778" elapsed="0.035538"/>
+<status status="PASS" start="2024-05-07T22:14:11.932563" elapsed="0.022659"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:21.831690" level="INFO">Typing text '25.04.2024' into text field 'id=ud_ke_dni'.</msg>
+<msg time="2024-05-07T22:14:11.955222" level="INFO">Typing text '25.04.2024' into text field 'id=ud_ke_dni'.</msg>
 <arg>id=ud_ke_dni</arg>
 <arg>25.04.2024</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:21.830316" elapsed="0.204691"/>
+<status status="PASS" start="2024-05-07T22:14:11.955222" elapsed="0.090537"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:22.036009" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
+<msg time="2024-05-07T22:14:12.046875" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
 <arg>id=ud</arg>
 <arg>1</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-05-07T21:57:22.036009" elapsed="0.098625"/>
+<status status="PASS" start="2024-05-07T22:14:12.045759" elapsed="0.112646"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:22.135644" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
+<msg time="2024-05-07T22:14:12.159400" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
 <arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:57:22.135644" elapsed="0.719543"/>
+<status status="PASS" start="2024-05-07T22:14:12.159400" elapsed="0.698980"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:57:22.868435" level="INFO">Current page contains element 'xpath=//a[contains(text(), 'Řád veřejného pohřebiště městyse Černá Hora')]'.</msg>
+<msg time="2024-05-07T22:14:12.876126" level="INFO">Current page contains element 'xpath=//a[contains(text(), 'Řád veřejného pohřebiště městyse Černá Hora')]'.</msg>
 <arg>xpath=//a[contains(text(), 'Řád veřejného pohřebiště městyse Černá Hora')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:57:22.856328" elapsed="0.013106"/>
+<status status="PASS" start="2024-05-07T22:14:12.858380" elapsed="0.017746"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:57:20.824038" elapsed="2.045396"/>
+<status status="PASS" start="2024-05-07T22:14:10.875115" elapsed="2.002223"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:57:22.870427" elapsed="2.253320"/>
+<status status="PASS" start="2024-05-07T22:14:12.877338" elapsed="2.258178"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:57:18.238500" elapsed="6.885247"/>
+<status status="PASS" start="2024-05-07T22:14:08.219669" elapsed="6.915847"/>
 </suite>
 <statistics>
 <total>

@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:53:57.596448" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:10:43.583178" rpa="false" schemaversion="5">
 <suite id="s1" name="TC201-hledanineexiatujiciho slova" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-002 Hledani\TC201-hledanineexiatujiciho slova.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-05-07T21:53:57.778549" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:10:43.778872" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-07T21:53:57.777554" elapsed="2.420771"/>
+<status status="PASS" start="2024-05-07T22:10:43.778872" elapsed="2.844638"/>
 </kw>
 <test id="s1-t1" name="Test Hledani" line="12">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-07T21:54:00.199339" elapsed="0.030966"/>
+<status status="PASS" start="2024-05-07T22:10:46.624504" elapsed="0.033022"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:00.231315" level="INFO">Clicking element 'xpath=//a[contains(@class, 'fullscreen-search-anchor')]'.</msg>
+<msg time="2024-05-07T22:10:46.658516" level="INFO">Clicking element 'xpath=//a[contains(@class, 'fullscreen-search-anchor')]'.</msg>
 <arg>xpath=//a[contains(@class, 'fullscreen-search-anchor')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:00.231315" elapsed="0.061211"/>
+<status status="PASS" start="2024-05-07T22:10:46.657526" elapsed="0.075485"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:00.293539" level="INFO">Typing text 'ačokčovitý' into text field 'id=hl'.</msg>
+<msg time="2024-05-07T22:10:46.733011" level="INFO">Typing text 'ačokčovitý' into text field 'id=hl'.</msg>
 <arg>id=hl</arg>
 <arg>ačokčovitý</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:00.293539" elapsed="0.100127"/>
+<status status="PASS" start="2024-05-07T22:10:46.733011" elapsed="0.074429"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:00.394836" level="INFO">Clicking button 'css=.fullscreen-search-button'.</msg>
+<msg time="2024-05-07T22:10:46.807440" level="INFO">Clicking button 'css=.fullscreen-search-button'.</msg>
 <arg>css=.fullscreen-search-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:00.394836" elapsed="0.638081"/>
+<status status="PASS" start="2024-05-07T22:10:46.807440" elapsed="0.601415"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath=//p[@class='stav']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-07T21:54:01.032917" elapsed="0.018233"/>
+<status status="PASS" start="2024-05-07T22:10:47.408855" elapsed="0.010945"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-07T21:54:01.072054" level="INFO">${element_text} = Žádná stránka nenalezena.</msg>
+<msg time="2024-05-07T22:10:47.440096" level="INFO">${element_text} = Žádná stránka nenalezena.</msg>
 <var>${element_text}</var>
 <arg>xpath=//p[@class='stav']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-07T21:54:01.051150" elapsed="0.020904"/>
+<status status="PASS" start="2024-05-07T22:10:47.420801" elapsed="0.019295"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${element_text}</arg>
 <arg>${Expected Text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-05-07T21:54:01.072054" elapsed="0.001298"/>
+<status status="PASS" start="2024-05-07T22:10:47.441095" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:54:00.199339" elapsed="0.874013"/>
+<status status="PASS" start="2024-05-07T22:10:46.623510" elapsed="0.817585"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-07T21:54:01.074365" elapsed="2.251410"/>
+<status status="PASS" start="2024-05-07T22:10:47.442089" elapsed="2.251650"/>
 </kw>
-<status status="PASS" start="2024-05-07T21:53:57.597468" elapsed="5.728307"/>
+<status status="PASS" start="2024-05-07T22:10:43.584180" elapsed="6.109559"/>
 </suite>
 <statistics>
 <total>
