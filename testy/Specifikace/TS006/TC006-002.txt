@@ -1,0 +1,24 @@
+TC006-002- Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - slideshow
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Fotogalerie
+2. počkáme než se objeví nadpis Fotogalerie
+3. klikneme na tlačítko s rokem 2012
+4. počkáme než se ukáže nadpis 2012
+5. Klikneme na výroba Vánočních ozdob z korálků
+6. Počkáme na nadpis výroba Vánočních ozdob z korálků
+7. Kliknutím na fotografii se ukáže galerie
+8. klikneme na logo slideshow alt="Spustit/zastavit"
+9. Pozorujeme zdali se obrázky sami měni
+Popis : Testuje funkčnost fotogalerie  slideshow
+Očekávany výsledek: Po kliknutí na fotogalerii, 2012,  výroba Vánočních ozdob z korálků,  fotografie č.1  a tlačítko slideshow se spustí prezentace všech fotografií.

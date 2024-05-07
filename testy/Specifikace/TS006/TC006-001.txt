@@ -1,0 +1,24 @@
+TC006-001 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - rozkliknutí fotografii a posouvání
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na Fotogalerie
+2. počkáme než se objeví nadpis Fotogalerie
+3. klikneme na tlačítko s rokem 2012
+4. počkáme než se ukáže nadpis 2012
+5. Klikneme na výroba Vánočních ozdob z korálků
+6. Počkáme na nadpis výroba Vánočních ozdob z korálků
+7. Kliknutím na fotografii se ukáže galerie
+8. posuneme meti fotkama šipkou do leva 
+9 zkontrolujeme že jsme na fotce číslo 2
+Popis : Testuje funkčnost fotogalerie a posunu v galerii
+Očekávany výsledek: Po kliknutí na fotogalerii, 2012,  výroba Vánočních ozdob z korálků, a fotografie č.1  se nám ukáže daná galerie kde lze posuva tnavigačními prvky

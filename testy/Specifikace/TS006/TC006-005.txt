@@ -1,0 +1,19 @@
+TC006-005- zpět na homepage pomocí kliknutí na logo města
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme na tlačítko v Menu s nápisem Úřad
+2. zkontrolujeme zdali jsme na stránce : https://www.cernahora.eu/urad/d-1348/p1=12435
+3. klikneme vpravo nahoře na logo města
+4. Zkontrolujeme že jsme zpět na hlavní stránce webu
+Popis : Testuje funkčnost prokliku na domovskou stránku pomocí loga města
+Očekávany výsledek: Po kliknutí na logo města se ocitneme zpátky na domovské stránce

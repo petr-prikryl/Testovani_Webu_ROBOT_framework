@@ -1,0 +1,18 @@
+TC006-004- proklik na Mapový portál
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS006.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. klikneme 2. položku v seznamu s názvem Mapový portál s id="osn12579ui2"
+2. překlikneme na nově otevřenou kartu
+2. Zkontrolujeme že se nám otevřela webová stránka s mapou : https://www.gobec.cz/cerna-hora/
+Popis : Testuje funkčnost prokliku na Mapový portál 
+Očekávany výsledek: Po kliknutí na odkaz se otevře externí mapový portál.

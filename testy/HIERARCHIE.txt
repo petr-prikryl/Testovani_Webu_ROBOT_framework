@@ -50,3 +50,10 @@ TS005 - Přihlašování
 		TC005-006 - Proklik na neexistující diskuzní fórum přes přihlášeného uživatele
 		TC005-007 - Přihlášení a odběr novinek
 		TC005-008 - Přihlášení a zrušení odběru novinek
+TS006- Manuální testy
+		TC006-001 - Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - rozkliknutí fotografii a posouvání
+		TC006-002- Kontrola funkčnosti a zobrazení fotogalerie z roku 2012 - slideshow
+		TC006-003- proklik na pdf Rozvoj městyse 
+		TC006-004- proklik na Mapový portál
+		TC006-005- zpět na homepage pomocí kliknutí na logo města
+		

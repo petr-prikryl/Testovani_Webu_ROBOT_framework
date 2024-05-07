@@ -1,0 +1,12 @@
+TS006 - Manuální testy
+
+Stručný popis:
+Tato testovací sada slouží k testování různých funkcí manuálně
+
+Datum 07.05.2024
+Verze 1
+Autor - Petr Přikryl
+
+Pre-conditions
+	1. Máme otevřený prohlížeč Chrome - verze 121.0.6312.122
+	2. Hlavní stránka je načtená - vrací status 200
