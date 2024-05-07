@@ -1,0 +1,20 @@
+TC103 - Kontrola Překladu do Angličtiny
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Počkat dokud neuvidiím logo Google Translate
+2. Rozkliknout a z listu vybrat Angličtinu
+3. Počkat a zkontrolovat jestli uvidíme název Office
+
+Popis : Testuje jestli funguje Překlad
+Očekávany výsledek: Překliknutím na angličtinu se stránku přeloží do Angličtiny

@@ -1,0 +1,25 @@
+TC100 - Kontrola otevření odkazu Úřad
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Počkat než se zobrazí Úřad
+3. Kliknout na element Úřad
+4. Počkat jestli vidíme nadpis 
+5. Zkontolujeme jestli je nadpis == Adresa
+
+Testovací data:
+	- Texty tlačítek -> Úřad
+
+Popis : Testuje Odkaz Úřad v menu
+Očekávany výsledek: Kliknutím na odkaz Úřad nás stránka přesměruje na stránku Úřad

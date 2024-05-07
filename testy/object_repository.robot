@@ -1,3 +1,5 @@
+*** Settings ***
+Library    SeleniumLibrary
 *** Variables ***
 ${MENU_BUTTON}    id=hlava__menu-button
 ${MAIN_MENU}    css=.menu1
@@ -17,3 +19,6 @@ ${Expected Username}   Petr petr@prikryl.cc (petr@prikryl.cc)
 ${Popup}  Přístup nepovolen, zadejte prosím platné jméno a heslo.
 ${LINK_TEXT22}      Zobrazit na mapě
 ${EXPECTED_TEXT22}  Stránka nebyla nalezena (kód 404)
+
+*** Keywords ***
+Otevrit  Open Browser    ${URL}    ${BROWSER}

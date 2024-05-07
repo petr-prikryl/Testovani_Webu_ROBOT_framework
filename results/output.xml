@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T14:49:05.333205" rpa="false" schemaversion="5">
+<suite id="s1" name="Proejtk" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk">
+<suite id="s1-s1" name="Testy" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy">
+<suite id="s1-s1-s1" name="TS001 - Hlavni stranka" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\TS001 - Hlavni stranka">
+<suite id="s1-s1-s1-s1" name="TS001-001 Top menu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\TS001 - Hlavni stranka\TS001-001 Top menu">
+<suite id="s1-s1-s1-s1-s1" name="TC100-kontrola otevreni odkazu urad" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\TS001 - Hlavni stranka\TS001-001 Top menu\TC100-kontrola otevreni odkazu urad.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Test Menu Navigation" line="13">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-05-07T14:49:05.534247" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-07T14:49:05.534247" level="FAIL">No browser is open.</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-05-07T14:49:05.533233" elapsed="0.003499">No browser is open.</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[contains(text(),'Úřad')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-05-07T14:49:05.536732" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//a[contains(text(),'Úřad')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-07T14:49:05.537743" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-05-07T14:49:05.537743" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${element_text}</var>
+<arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-07T14:49:05.538856" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Adresa</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-05-07T14:49:05.538856" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-07T14:49:05.532012" elapsed="0.006844">No browser is open.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T14:49:05.540732" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-07T14:49:05.362751" elapsed="0.177981"/>
+</suite>
+<status status="FAIL" start="2024-05-07T14:49:05.360635" elapsed="0.182387"/>
+</suite>
+<status status="FAIL" start="2024-05-07T14:49:05.359541" elapsed="0.183481"/>
+</suite>
+<status status="FAIL" start="2024-05-07T14:49:05.357532" elapsed="0.186970"/>
+</suite>
+<status status="FAIL" start="2024-05-07T14:49:05.338655" elapsed="0.206945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Proejtk">Proejtk</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testy">Proejtk.Testy</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TS001 - Hlavni stranka">Proejtk.Testy.TS001 - Hlavni stranka</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TS001-001 Top menu">Proejtk.Testy.TS001 - Hlavni stranka.TS001-001 Top menu</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="TC100-kontrola otevreni odkazu urad">Proejtk.Testy.TS001 - Hlavni stranka.TS001-001 Top menu.TC100-kontrola otevreni odkazu urad</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

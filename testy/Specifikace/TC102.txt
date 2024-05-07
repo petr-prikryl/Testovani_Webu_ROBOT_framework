@@ -1,0 +1,25 @@
+TC102 - Kontrola otevření odkazu Potřebuji si vyřídit
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Počkat než se zobrazí Potřebuji si vyřídit
+3. Kliknout na element Potřebuji si vyřídit
+4. Počkat jestli vidíme nadpis 
+5. Zkontolujeme jeslti je nadpis == Co lze vyřídit na radnici
+
+Testovací data:
+	- Texty tlačítek -> Potřebuji si vyřídit
+
+Popis : Testuje Odkaz Potřebuji si vyřídit v menu
+Očekávany výsledek: Kliknutím na odkaz Potřebuji si vyřídit nás stránka přesměruje na stránku Potřebuji si vyřídit

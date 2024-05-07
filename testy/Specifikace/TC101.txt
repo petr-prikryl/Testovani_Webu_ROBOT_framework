@@ -1,0 +1,25 @@
+TC101 - Kontrola otevření odkazu Městys
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Maximalizace okna
+2. Počkat než se zobrazí Městys
+3. Kliknout na element Městys
+4. Počkat jestli vidíme nadpis 
+5. Zkontolujeme jeslti je nadpis == O městysu
+
+Testovací data:
+	- Texty tlačítek -> Městys
+
+Popis : Testuje Odkaz Městys v menu
+Očekávany výsledek: Kliknutím na odkaz Městys nás stránka přesměruje na stránku Městys

@@ -1,0 +1,20 @@
+TC103 - Kontrola Překladu do Angličtiny
+
+Autor - Petr Přikryl
+Datum - 07.05.2024
+Verze = 1
+
+Manuální + Automatizovaný
+
+Pre-conditions:
+	- viz nadřazená testovací sada TS001.
+Post-conditions:
+	-Zavřít prohlížeč
+
+Testovací kroky:
+1. Počkat dokud neuvidiím logo Google Translate
+2. Rozkliknout a z listu vybrat Němčinu
+3. Počkat a zkontrolovat jestli uvidíme název Gemeinde
+
+Popis : Testuje jestli funguje Překlad
+Očekávany výsledek: Překliknutím na Němčinu se stránku přeloží do Němčiny

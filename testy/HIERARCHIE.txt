@@ -1,0 +1,52 @@
+https://www.cernahora.eu/
+
+TS001 - Hlavní stránka
+	TS001-001 - Top Menu
+		TC100 - Kontrola otevření odkazu "Úřad"
+		TC101 - Kontrola otevření odkazu "Městys"
+		TC102 - Kontrola otevření odkazu "Potřebuji si vyřídit"
+		TC103 - Kontrola Přepnutí stránky do jazyka Angličtina
+		TC104 - Kontrola Přepnutí stránky do jazyka Němčina
+		TC105 - Kontrola otevření odkazu "Facebook"
+	TS001-002 - Hledat
+		TC200 - Kontrola funkčnosti vyhledávání se slovem Vánoce
+		TC201 - Kontrola vyhledávání s neexistujicím slovem (na stránce) Ačokčovitý
+		TC202 - Kontrola funkčnosti přepnutí stránky u výsledků vyhledávání 
+	TS001-003 - "Body"
+		TC300 - Kontrola otevření odkazu "Hlášení rozhlasem"
+		TC301 - Kontrola otevření odkazu "Knihovna a informační centrum"
+		TC302 - Kontrola otevření odkazu "Úřední deska"
+	TS001-004 - Kalendář
+		TC400 - Kontrola prokliku na akci konající se dne 14. května
+		TC401 - Kontrola prokliku na akci konající se dne 5.  března
+		TC402 - Kontrola prokliku na akci konající se dne 15. června
+		TC403 - Kontrola prokliku na akci konající se dne 9.  února
+		TC404 - Kontrola jestli zvýrazněný datum je opravdu dnešní datum
+	TS001-005 - Patička
+		TC500 - Kontrola otevření odkazu "Policie ČR"
+		TC501 - Kontrola otevření odkazu "Vodárenská a. s."
+		TC502 - Kontrola otevření odkazu "Czech POINT"
+		TC503 - Kontrola otevření odkazu "O webu"
+		TC504 - Kontrola otevření odkazu "Prohlášení o použití cookies"
+		TC505 - Kontrola otevření odkazu "Mapa Stránek"
+		TC506 - Kontrola zobrazení Captcha
+		TC507 - Kontrola otevření odkazu "Zobrazit na Mapě"
+TS002 - Úřední deska
+		TC002-001 - Úřední deska ke dni 25.04.2024
+		TC002-002 - Úřední deska ke dni 25.04.1998
+		TC002-003 - Úřední deska ke dni 25.04.2050
+TS003 - Fotogalerie
+		TC003-001 - Fotogalerie z roku 2012
+		TC003-002 - Fotogalerie z roku 2020 a listování mezi stránkama
+		TC003-003 - Sdílení fotoglerie z roku 2012 na X
+TS004 - Infokanál
+		TC004-001 - Oveření přesměrování na infokanal.cz
+TS005 - Přihlašování
+		TC005-001 - Kontrola příhlášení - uspěšné
+		TC005-002 - Kontrola příhlášení - neexistující uživatel
+		TC005-003 - Kontrola příhlášení - prázdné heslo
+		TC005-004 - Kontrola příhlášení - uspěšné
+		TC005-005 - Proklik na úpravu profilu přihlášeného uživatele
+		TC005-006 - Proklik na neexistující diskuzní fórum přes přihlášeného uživatele
+		TC005-007 - Přihlášení a odběr novinek
+		TC005-008 - Přihlášení a zrušení odběru novinek

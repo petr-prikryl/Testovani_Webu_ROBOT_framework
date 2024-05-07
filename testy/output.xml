@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T15:14:04.249011" rpa="false" schemaversion="5">
+<suite id="s1" name="TC100-kontrola otevreni odkazu urad" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\TS001 - hlavni stranka\TS001-001 Top menu\TC100-kontrola otevreni odkazu urad.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Otevrit" owner="object_repository">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-07T15:14:04.969178" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T15:14:05.592986" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.91); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T15:14:04.965182" elapsed="3.138080"/>
+</kw>
+<status status="PASS" start="2024-05-07T15:14:04.964178" elapsed="3.140084"/>
+</kw>
+<arg>Otevrit</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-05-07T15:14:04.960176" elapsed="3.145096"/>
+</kw>
+<test id="s1-t1" name="Test Menu Navigation" line="8">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-07T15:14:08.108274" elapsed="0.128824"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[contains(text(),'Úřad')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T15:14:08.240143" elapsed="0.096227"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T15:14:08.339712" level="INFO">Clicking element '//a[contains(text(),'Úřad')]'.</msg>
+<arg>//a[contains(text(),'Úřad')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T15:14:08.338497" elapsed="0.675104"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T15:14:09.015669" elapsed="0.017257"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T15:14:09.067909" level="INFO">${element_text} = Adresa</msg>
+<var>${element_text}</var>
+<arg>xpath=//h2[contains(@class,'cvi') and contains(@class,'text-to-speech')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T15:14:09.034922" elapsed="0.033988"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Adresa</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-07T15:14:09.070912" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-05-07T15:14:08.105272" elapsed="0.968635"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T15:14:09.080186" elapsed="2.349995"/>
+</kw>
+<status status="PASS" start="2024-05-07T15:14:04.265060" elapsed="7.166125"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC100-kontrola otevreni odkazu urad">TC100-kontrola otevreni odkazu urad</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-07T15:14:05.592986" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.91); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

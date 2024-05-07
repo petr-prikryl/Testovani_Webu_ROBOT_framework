@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../../object_repository.robot
-Suite Setup    Open Browser    ${URL}    ${BROWSER}
+Suite Setup  Run Keywords  Otevrit
 Suite Teardown    Close Browser
 
 *** Test Cases ***
