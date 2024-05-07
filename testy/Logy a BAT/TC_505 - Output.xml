@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:49.088876" rpa="false" schemaversion="5">
+<suite id="s1" name="TC505 - proklik na mapu stránek" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC505 - proklik na mapu stránek.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:56:49.278773" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:56:49.277619" elapsed="2.512941"/>
+</kw>
+<test id="s1-t1" name="TestProklikuOwebu" line="8">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:51.791899" level="INFO">Clicking element 'xpath=//a[@href="/mapa-stranek"]'.</msg>
+<arg>xpath=//a[@href="/mapa-stranek"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:56:51.791899" elapsed="0.527518"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:52.333077" level="INFO">Current page contains element 'xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Mapa stránek')]'.</msg>
+<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Mapa stránek')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:56:52.319417" elapsed="0.014661"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:51.790560" elapsed="0.543518"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:56:52.335082" elapsed="2.238668"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:49.090875" elapsed="5.482875"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC505 - proklik na mapu stránek">TC505 - proklik na mapu stránek</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

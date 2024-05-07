@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:27.894790" rpa="false" schemaversion="5">
+<suite id="s1" name="TC503 - proklik na o webu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC503 - proklik na o webu.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:56:28.078862" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:56:28.078862" elapsed="2.295918"/>
+</kw>
+<test id="s1-t1" name="TestProklikuOwebu" line="8">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:30.376503" level="INFO">Clicking element 'xpath=//a[@href='/vismo/o-webu.asp']'.</msg>
+<arg>xpath=//a[@href='/vismo/o-webu.asp']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:56:30.376503" elapsed="0.686627"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:31.075075" level="INFO">Current page contains element 'xpath=//h2[@class='cvi' and contains(text(), 'O webu')]'.</msg>
+<arg>xpath=//h2[@class='cvi' and contains(text(), 'O webu')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:56:31.064130" elapsed="0.010945"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:30.374780" elapsed="0.701305"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:56:31.077085" elapsed="2.271414"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:27.896961" elapsed="5.452050"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC503 - proklik na o webu">TC503 - proklik na o webu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

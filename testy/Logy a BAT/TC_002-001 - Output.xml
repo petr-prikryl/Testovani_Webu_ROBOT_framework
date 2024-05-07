@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:57:18.236496" rpa="false" schemaversion="5">
+<suite id="s1" name="TC002-001 - Úřední deska ke dni 25042024" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS002 -  Uredni deska\TC002-001 - Úřední deska ke dni 25042024.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:57:18.424052" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:57:18.424052" elapsed="2.399986"/>
+</kw>
+<test id="s1-t1" name="Click Link And Verify Header" line="8">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:20.825046" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:20.825046" elapsed="0.969732"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:57:21.794778" elapsed="0.035538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:21.831690" level="INFO">Typing text '25.04.2024' into text field 'id=ud_ke_dni'.</msg>
+<arg>id=ud_ke_dni</arg>
+<arg>25.04.2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:21.830316" elapsed="0.204691"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:22.036009" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
+<arg>id=ud</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-07T21:57:22.036009" elapsed="0.098625"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:22.135644" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
+<arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:22.135644" elapsed="0.719543"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:22.868435" level="INFO">Current page contains element 'xpath=//a[contains(text(), 'Řád veřejného pohřebiště městyse Černá Hora')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Řád veřejného pohřebiště městyse Černá Hora')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:57:22.856328" elapsed="0.013106"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:20.824038" elapsed="2.045396"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:57:22.870427" elapsed="2.253320"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:18.238500" elapsed="6.885247"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC002-001 - Úřední deska ke dni 25042024">TC002-001 - Úřední deska ke dni 25042024</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

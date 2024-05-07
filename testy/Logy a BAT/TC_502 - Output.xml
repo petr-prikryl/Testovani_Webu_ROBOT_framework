@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:17.943882" rpa="false" schemaversion="5">
+<suite id="s1" name="TC502 - proklik na czechpoint" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC502 - proklik na czechpoint.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:56:18.132566" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:56:18.132566" elapsed="2.609936"/>
+</kw>
+<test id="s1-t1" name="Open Links and Verify URLs" line="8">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:20.743816" level="INFO">Clicking element 'xpath=//img[@alt='logo czech point']'.</msg>
+<arg>xpath=//img[@alt='logo czech point']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:56:20.742502" elapsed="0.104471"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:56:20.847973" elapsed="0.013506"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Czech POINT</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:56:20.861479" elapsed="0.344865"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:56:21.210584" level="INFO">Current location is 'https://www.czechpoint.cz/public/'.</msg>
+<arg>https://www.czechpoint.cz/public/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:56:21.206849" elapsed="0.003735"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-05-07T21:56:21.210584" elapsed="0.019011"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:20.742502" elapsed="0.488127"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:56:21.230629" elapsed="2.224033"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:17.944883" elapsed="5.509779"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC502 - proklik na czechpoint">TC502 - proklik na czechpoint</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

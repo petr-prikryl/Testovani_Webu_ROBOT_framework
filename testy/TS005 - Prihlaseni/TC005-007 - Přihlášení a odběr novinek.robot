@@ -21,5 +21,6 @@ Test Login And Verify Username
     Click Element    xpath=//a[@href="http://www.cernahora.eu/abo" and @title="Odběr novinek"]
     Wait Until Page Contains    Odběr novinek - Městys Černá Hora
     Wait Until Element Is Visible    xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]
+    Sleep  5s
     Click Element    xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]
     Wait Until Page Contains    Odběr Vám byl přiřazen.

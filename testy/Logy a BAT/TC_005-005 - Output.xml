@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:59:29.011747" rpa="false" schemaversion="5">
+<suite id="s1" name="TC005-005 - Proklik na úpravu profilu přihlášeného uživatele" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS005 - Prihlaseni\TC005-005 - Proklik na úpravu profilu přihlášeného uživatele.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:59:29.204022" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:59:29.204022" elapsed="2.344762"/>
+</kw>
+<test id="s1-t1" name="Test Login And Verify Username" line="10">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-07T21:59:31.549786" elapsed="0.037503"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:31.588289" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
+<arg>xpath=${Login Link XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:31.587289" elapsed="0.500981"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class="cvi" and text()="Přihlášení uživatele"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.089266" elapsed="0.017780"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:32.108300" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
+<arg>id=login</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.108300" elapsed="0.065314"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:32.174819" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-05-07T21:59:32.207294" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.174819" elapsed="0.078978"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:32.254797" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
+<arg>xpath=${Login Button XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.253797" elapsed="0.539895"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.794692" elapsed="0.025455"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:32.841496" level="INFO">${Displayed Username} = Petr petr@prikryl.cc (petr@prikryl.cc)</msg>
+<var>${Displayed Username}</var>
+<arg>xpath=//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.821158" elapsed="0.020338"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Displayed Username}</arg>
+<arg>${Expected Username}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.841496" elapsed="0.001011"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:59:32.842507" level="INFO">Clicking link 'Petr petr@prikryl.cc (petr@prikryl.cc)'.</msg>
+<arg>Petr petr@prikryl.cc (petr@prikryl.cc)</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:59:32.842507" elapsed="0.523798"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:59:31.548784" elapsed="1.817521"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:59:33.367314" elapsed="2.237705"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:59:29.013755" elapsed="6.591264"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC005-005 - Proklik na úpravu profilu přihlášeného uživatele">TC005-005 - Proklik na úpravu profilu přihlášeného uživatele</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

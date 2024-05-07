@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:54:28.297151" rpa="false" schemaversion="5">
+<suite id="s1" name="TC300 - kontrola otevreni odkazu hlaseni rozhlasem" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-003 Body\TC300 - kontrola otevreni odkazu hlaseni rozhlasem.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:54:28.484135" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:54:28.483630" elapsed="2.710090"/>
+</kw>
+<test id="s1-t1" name="Test Click Link and Verify Heading" line="13">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:54:31.194721" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Hlášení rozhlasem')]'.</msg>
+<arg>xpath=//a[contains(text(), '${Link Text}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:54:31.194721" elapsed="0.489861"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:54:31.703406" level="INFO">Current page contains element 'xpath=//h2[contains(text(), 'Hlášení místního rozhlasu')]'.</msg>
+<arg>xpath=//h2[contains(text(), '${Expected Heading}')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:54:31.685929" elapsed="0.017477"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:54:31.193720" elapsed="0.509686"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:54:31.704485" elapsed="2.240750"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:54:28.299149" elapsed="5.646086"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC300 - kontrola otevreni odkazu hlaseni rozhlasem">TC300 - kontrola otevreni odkazu hlaseni rozhlasem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

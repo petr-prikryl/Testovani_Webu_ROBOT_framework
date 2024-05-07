@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:58:29.556819" rpa="false" schemaversion="5">
+<suite id="s1" name="TC004-001 - Oveření přesměrování na infokanal-cz" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS004 - Infokanal\TC004-001 - Oveření přesměrování na infokanal-cz.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:58:29.743142" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:58:29.743142" elapsed="2.571065"/>
+</kw>
+<test id="s1-t1" name="Test Click InfoChannel And Registration Form" line="16">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:58:32.316445" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Hlášení rozhlasem')]'.</msg>
+<arg>xpath=//a[contains(text(), '${Link Text}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:58:32.315435" elapsed="0.595425"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:58:32.925114" level="INFO">Current page contains element 'xpath=//h2[contains(text(), 'Hlášení místního rozhlasu')]'.</msg>
+<arg>xpath=//h2[contains(text(), '${Expected Heading}')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:58:32.910860" elapsed="0.014254"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:58:32.926122" level="INFO">Clicking element 'xpath=//a[@href="/infokanal/ms-13605/p1=13605"]'.</msg>
+<arg>xpath=${InfoChannel Link XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:58:32.926122" elapsed="0.505585"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class, 'cvi') and contains(@class, 'text-to-speech') and contains(text(), '${Expected Text}')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:58:33.432708" elapsed="0.017258"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:58:33.450962" level="INFO">Clicking element 'xpath=//a[@href="http://www.infokanal.cz/reg/CHORA"]'.</msg>
+<arg>xpath=${Registration Form Link XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:58:33.450962" elapsed="0.595273"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:58:34.055773" level="INFO">${current_url} = https://www.infokanal.cz/reg/CHORA</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-05-07T21:58:34.046235" elapsed="0.010536"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${Expected URL}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-07T21:58:34.056771" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:58:32.314207" elapsed="1.742564"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:58:34.057770" elapsed="2.246325"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:58:29.557817" elapsed="6.746278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC004-001 - Oveření přesměrování na infokanal-cz">TC004-001 - Oveření přesměrování na infokanal-cz</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

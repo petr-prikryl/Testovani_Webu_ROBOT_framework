@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:57:29.587534" rpa="false" schemaversion="5">
+<suite id="s1" name="TC002-002 - Úřední deska ke dni 25041998" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS002 -  Uredni deska\TC002-002 - Úřední deska ke dni 25041998.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:57:29.774389" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:57:29.773349" elapsed="2.987621"/>
+</kw>
+<test id="s1-t1" name="Click Link And Verify Header" line="8">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:32.763325" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:32.761968" elapsed="0.686586"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:57:33.448554" elapsed="0.018935"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:33.468744" level="INFO">Typing text '25.04.1998' into text field 'id=ud_ke_dni'.</msg>
+<arg>id=ud_ke_dni</arg>
+<arg>25.04.1998</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:33.468744" elapsed="0.106020"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:33.575770" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
+<arg>id=ud</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-07T21:57:33.575770" elapsed="0.125213"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:33.700983" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
+<arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:33.700983" elapsed="0.706252"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:34.408235" level="INFO">Clicking link 'xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']'.</msg>
+<arg>xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:34.408235" elapsed="0.344483"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:34.768900" level="INFO">Current page contains element 'xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']'.</msg>
+<arg>xpath=//p[@class='stav']/strong[text()='Úřední deska nyní neobsahuje žádné dokumenty.']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:57:34.752718" elapsed="0.016182"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:32.760970" elapsed="2.009199"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:57:34.771272" elapsed="2.256512"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:29.589552" elapsed="7.438232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC002-002 - Úřední deska ke dni 25041998">TC002-002 - Úřední deska ke dni 25041998</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

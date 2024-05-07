@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:08:04.165823" rpa="false" schemaversion="5">
+<suite id="s1" name="TC005-007 - Přihlášení a odběr novinek" source="c:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\TS005 - Prihlaseni\TC005-007 - Přihlášení a odběr novinek.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T22:08:04.802448" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T22:08:05.362617" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.155); currently, chromedriver 124.0.6367.155 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T22:08:04.800446" elapsed="2.678036"/>
+</kw>
+<test id="s1-t1" name="Test Login And Verify Username" line="11">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-07T22:08:07.484011" elapsed="0.118058"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:07.605073" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
+<arg>xpath=${Login Link XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:07.603069" elapsed="0.572177"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class="cvi" and text()="Přihlášení uživatele"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T22:08:08.177256" elapsed="0.032853"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:08.213121" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
+<arg>id=login</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:08.212120" elapsed="0.151465"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:08.366588" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-05-07T22:08:08.421693" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:08.364588" elapsed="0.115981"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:08.483567" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
+<arg>xpath=${Login Button XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:08.481569" elapsed="0.551741"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.034323" elapsed="0.028826"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:09.105236" level="INFO">${Displayed Username} = Petr petr@prikryl.cc (petr@prikryl.cc)</msg>
+<var>${Displayed Username}</var>
+<arg>xpath=//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.065345" elapsed="0.040899"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Displayed Username}</arg>
+<arg>${Expected Username}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.107244" elapsed="0.002000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:09.112640" level="INFO">Clicking element 'xpath=//a[@href="http://www.cernahora.eu/abo" and @title="Odběr novinek"]'.</msg>
+<arg>xpath=//a[@href="http://www.cernahora.eu/abo" and @title="Odběr novinek"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.111594" elapsed="0.756198"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Odběr novinek - Městys Černá Hora</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.869795" elapsed="0.036160"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T22:08:09.908135" elapsed="0.455160"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T22:08:15.365393" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T22:08:10.364306" elapsed="5.001087"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:08:15.368399" level="INFO">Clicking element 'xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]'.</msg>
+<arg>xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:08:15.367399" elapsed="0.048663"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Odběr Vám byl přiřazen.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T22:08:15.418063" elapsed="2.341717"/>
+</kw>
+<status status="PASS" start="2024-05-07T22:08:07.480993" elapsed="10.280789"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T22:08:17.768887" elapsed="2.446926"/>
+</kw>
+<status status="PASS" start="2024-05-07T22:08:04.183083" elapsed="16.033748"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC005-007 - Přihlášení a odběr novinek">TC005-007 - Přihlášení a odběr novinek</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-07T22:08:05.362617" level="WARN">The chromedriver version (123.0.6312.122) detected in PATH at C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.155); currently, chromedriver 124.0.6367.155 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

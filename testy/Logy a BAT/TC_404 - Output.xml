@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:55:43.595491" rpa="false" schemaversion="5">
+<suite id="s1" name="TC404 kontrola jestli zvyrazneny datum je opravdu dnesni datum" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-004 Kalendar\TC404 kontrola jestli zvyrazneny datum je opravdu dnesni datum.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:55:43.776487" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:55:43.776487" elapsed="2.908156"/>
+</kw>
+<test id="s1-t1" name="Compare Dates" line="10">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-05-07T21:55:46.686970" level="INFO">${current_day} = 07</msg>
+<var>${current_day}</var>
+<arg>result_format=%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.685957" elapsed="0.001013"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-05-07T21:55:46.687970" level="INFO">${current_day} = 7</msg>
+<var>${current_day}</var>
+<arg>${current_day}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.686970" elapsed="0.001000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-05-07T21:55:46.687970" level="INFO">${current_day} = 7</msg>
+<var>${current_day}</var>
+<arg>${current_day}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.687970" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:46.712230" level="INFO">${element_text} = 7</msg>
+<var>${element_text}</var>
+<arg>xpath=//td[@class='wkday curdate']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.687970" elapsed="0.024260"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${current_day}</arg>
+<arg>${element_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.713253" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:55:46.685957" elapsed="0.027296"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:55:46.714265" elapsed="2.218999"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:55:43.597500" elapsed="5.335764"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC404 kontrola jestli zvyrazneny datum je opravdu dnesni datum">TC404 kontrola jestli zvyrazneny datum je opravdu dnesni datum</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

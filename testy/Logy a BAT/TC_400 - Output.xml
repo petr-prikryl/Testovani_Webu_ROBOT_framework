@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:54:59.705855" rpa="false" schemaversion="5">
+<suite id="s1" name="TC400 proklik na akci 14kvetna" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-004 Kalendar\TC400 proklik na akci 14kvetna.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:54:59.884857" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:54:59.884857" elapsed="2.491185"/>
+</kw>
+<test id="s1-t1" name="Verify Calendar Navigation" line="8">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:02.390544" level="INFO">Current page contains element 'xpath=//a[text()='Květen 2024']'.</msg>
+<arg>xpath=//a[text()='Květen 2024']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:55:02.377037" elapsed="0.013507"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//td[@class='wkday']/a[text()='14']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:55:02.391546" elapsed="0.018624"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:02.410894" level="INFO">Clicking element 'xpath=//td[@class='wkday']/a[text()='14']'.</msg>
+<arg>xpath=//td[@class='wkday']/a[text()='14']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:55:02.410894" elapsed="0.543629"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:02.966624" level="INFO">Current page contains element 'xpath=//a[@href='/svoz%2Dplastoveho%2Dodpadu/a-1883']'.</msg>
+<arg>xpath=//a[@href='/svoz%2Dplastoveho%2Dodpadu/a-1883']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:55:02.955612" elapsed="0.011012"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:55:02.376042" elapsed="0.590582"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:55:02.968622" elapsed="2.269797"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:54:59.706858" elapsed="5.531561"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC400 proklik na akci 14kvetna">TC400 proklik na akci 14kvetna</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

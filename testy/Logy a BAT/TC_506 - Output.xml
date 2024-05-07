@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:56:59.040753" rpa="false" schemaversion="5">
+<suite id="s1" name="TC506 - kontrola zobrazeni captcha" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC506 - kontrola zobrazeni captcha.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:56:59.232272" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:56:59.231271" elapsed="2.393304"/>
+</kw>
+<test id="s1-t1" name="testcaptchi" line="8">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:01.625571" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
+<arg>css:button.btn[name="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:01.625571" elapsed="0.077968"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="volrecaptcha0"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:57:01.703781" elapsed="0.025457"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:01.624575" elapsed="0.104798"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:57:01.729881" elapsed="2.213596"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:56:59.041756" elapsed="4.901721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC506 - kontrola zobrazeni captcha">TC506 - kontrola zobrazeni captcha</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

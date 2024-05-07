@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T22:04:57.457747" rpa="false" schemaversion="5">
+<suite id="s1" name="TC003-002 - Fotogalerie z roku 2020 a listování mezi stránkama" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS003 - Fotogalerie\TC003-002 - Fotogalerie z roku 2020 a listování mezi stránkama.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T22:04:57.647231" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T22:04:57.646726" elapsed="2.341433"/>
+</kw>
+<test id="s1-t1" name="Test Fotogalerie 2012" line="7">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:04:59.990374" level="INFO">Clicking element 'xpath=//a[@href='/fotogalerie/ms-55/p1=12583']'.</msg>
+<arg>xpath=//a[@href='/fotogalerie/ms-55/p1=12583']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:04:59.989364" elapsed="0.728591"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Fotogalerie')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T22:05:00.718964" elapsed="0.018373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:05:00.738535" level="INFO">Clicking element 'xpath=//a[@href='/2020/ms-9140/p1=9140']'.</msg>
+<arg>xpath=//a[@href='/2020/ms-9140/p1=9140']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:05:00.738535" elapsed="0.376009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), '2020')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T22:05:01.114544" elapsed="0.018208"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:05:01.133263" level="INFO">Clicking element 'xpath=//a[@href='/sbirka%2Dkrabice%2Dod%2Dbot%2D29%2D11%2D2020/gs-1329/p1=9140']'.</msg>
+<arg>xpath=//a[@href='/sbirka%2Dkrabice%2Dod%2Dbot%2D29%2D11%2D2020/gs-1329/p1=9140']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T22:05:01.133263" elapsed="0.504423"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[contains(@class, 'cvi') and contains(text(), 'Sbírka Krabice od bot (29. 11. 2020)')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T22:05:01.638699" elapsed="0.024633"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T22:05:01.664333" level="INFO">Clicking element 'xpath=//span[@class='strvpred']/a[@class='aktivni']'.</msg>
+<msg time="2024-05-07T22:05:03.043756" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T22:05:03.043756" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="aktivni" href="/vismo/galerie2.asp?id_galerie=1329&amp;amp;n=sbirka%2Dkrabice%2Dod%2Dbot%2D29%2D11%2D2020&amp;amp;p1=9140&amp;amp;pocet=24&amp;amp;stranka=2"&gt;...&lt;/a&gt; is not clickable at point (879, 768). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
+  (Session info: chrome=124.0.6367.155)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D4411572+60802]
+	(No symbol) [0x00007FF7D438AC72]
+	(No symbol) [0x00007FF7D4247CE4]
+	(No symbol) [0x00007FF7D429E877]
+	(No symbol) [0x00007FF7D429C344]
+	(No symbol) [0x00007FF7D429980A]
+	(No symbol) [0x00007FF7D42989E2]
+	(No symbol) [0x00007FF7D428AE8B]
+	(No symbol) [0x00007FF7D42BAB7A]
+	(No symbol) [0x00007FF7D428A7C6]
+	(No symbol) [0x00007FF7D42BAD90]
+	(No symbol) [0x00007FF7D42DA224]
+	(No symbol) [0x00007FF7D42BA923]
+	(No symbol) [0x00007FF7D4288FEC]
+	(No symbol) [0x00007FF7D4289C21]
+	GetHandleVerifier [0x00007FF7D471420D+3217949]
+	GetHandleVerifier [0x00007FF7D47561A7+3488183]
+	GetHandleVerifier [0x00007FF7D474F12F+3459391]
+	GetHandleVerifier [0x00007FF7D44CB936+823622]
+	(No symbol) [0x00007FF7D439600F]
+	(No symbol) [0x00007FF7D4390F34]
+	(No symbol) [0x00007FF7D43910C2]
+	(No symbol) [0x00007FF7D4381914]
+	BaseThreadInitThunk [0x00007FFF62A9257D+29]
+	RtlUserThreadStart [0x00007FFF63C4AA48+40]
+</msg>
+<arg>xpath=//span[@class='strvpred']/a[@class='aktivni']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-07T22:05:01.663332" elapsed="1.382449">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="aktivni" href="/vismo/galerie2.asp?id_galerie=1329&amp;amp;n=sbirka%2Dkrabice%2Dod%2Dbot%2D29%2D11%2D2020&amp;amp;p1=9140&amp;amp;pocet=24&amp;amp;stranka=2"&gt;...&lt;/a&gt; is not clickable at point (879, 768). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
+  (Session info: chrome=124.0.6367.155)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D4411572+60802]
+	(No symbol) [0x00007FF7D438AC72]
+	(No symbol) [0x00007FF7D4247CE4]
+	(No symbol) [0x00007FF7D429E877]
+	(No symbol) [0x00007FF7D429C344]
+	(No symbol) [0x00007FF7D429980A]
+	(No symbol) [0x00007FF7D42989E2]
+	(No symbol) [0x00007FF7D428AE8B]
+	(No symbol) [0x00007FF7D42BAB7A]
+	(No symbol) [0x00007FF7D428A7C6]
+	(No symbol) [0x00007FF7D42BAD90]
+	(No symbol) [0x00007FF7D42DA224]
+	(No symbol) [0x00007FF7D42BA923]
+	(No symbol) [0x00007FF7D4288FEC]
+	(No symbol) [0x00007FF7D4289C21]
+	GetHandleVerifier [0x00007FF7D471420D+3217949]
+	GetHandleVerifier [0x00007FF7D47561A7+3488183]
+	GetHandleVerifier [0x00007FF7D474F12F+3459391]
+	GetHandleVerifier [0x00007FF7D44CB936+823622]
+	(No symbol) [0x00007FF7D439600F]
+	(No symbol) [0x00007FF7D4390F34]
+	(No symbol) [0x00007FF7D43910C2]
+	(No symbol) [0x00007FF7D4381914]
+	BaseThreadInitThunk [0x00007FFF62A9257D+29]
+	RtlUserThreadStart [0x00007FFF63C4AA48+40]
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@class='zarovnani']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-07T22:05:03.046778" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${element_text}</var>
+<arg>xpath=//div[@class='zarovnani']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-07T22:05:03.046778" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Zobrazeno je 2 z celkem 26 záznamů na stránce</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2024-05-07T22:05:03.046778" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-07T22:04:59.988159" elapsed="3.058619">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="aktivni" href="/vismo/galerie2.asp?id_galerie=1329&amp;amp;n=sbirka%2Dkrabice%2Dod%2Dbot%2D29%2D11%2D2020&amp;amp;p1=9140&amp;amp;pocet=24&amp;amp;stranka=2"&gt;...&lt;/a&gt; is not clickable at point (879, 768). Other element would receive the click: &lt;div id="voliviewer_overImagesTmpElementName" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: white; opacity: 0;"&gt;&lt;/div&gt;
+  (Session info: chrome=124.0.6367.155)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D4411572+60802]
+	(No symbol) [0x00007FF7D438AC72]
+	(No symbol) [0x00007FF7D4247CE4]
+	(No symbol) [0x00007FF7D429E877]
+	(No symbol) [0x00007FF7D429C344]
+	(No symbol) [0x00007FF7D429980A]
+	(No symbol) [0x00007FF7D42989E2]
+	(No symbol) [0x00007FF7D428AE8B]
+	(No symbol) [0x00007FF7D42BAB7A]
+	(No symbol) [0x00007FF7D428A7C6]
+	(No symbol) [0x00007FF7D42BAD90]
+	(No symbol) [0x00007FF7D42DA224]
+	(No symbol) [0x00007FF7D42BA923]
+	(No symbol) [0x00007FF7D4288FEC]
+	(No symbol) [0x00007FF7D4289C21]
+	GetHandleVerifier [0x00007FF7D471420D+3217949]
+	GetHandleVerifier [0x00007FF7D47561A7+3488183]
+	GetHandleVerifier [0x00007FF7D474F12F+3459391]
+	GetHandleVerifier [0x00007FF7D44CB936+823622]
+	(No symbol) [0x00007FF7D439600F]
+	(No symbol) [0x00007FF7D4390F34]
+	(No symbol) [0x00007FF7D43910C2]
+	(No symbol) [0x00007FF7D4381914]
+	BaseThreadInitThunk [0x00007FFF62A9257D+29]
+	RtlUserThreadStart [0x00007FFF63C4AA48+40]
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T22:05:03.049088" elapsed="2.272154"/>
+</kw>
+<status status="FAIL" start="2024-05-07T22:04:57.459743" elapsed="7.861499"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC003-002 - Fotogalerie z roku 2020 a listování mezi stránkama">TC003-002 - Fotogalerie z roku 2020 a listování mezi stránkama</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:55:53.466951" rpa="false" schemaversion="5">
+<suite id="s1" name="TC500 - proklik na policii" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-005 Paticka\TC500 - proklik na policii.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:55:53.654718" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:55:53.653482" elapsed="2.583223"/>
+</kw>
+<test id="s1-t1" name="Open Links and Verify URLs" line="8">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:56.237966" level="INFO">Clicking element 'xpath=//img[@alt='logo policie ČR']'.</msg>
+<arg>xpath=//img[@alt='logo policie ČR']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:55:56.237966" elapsed="0.091632"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:55:56.330603" elapsed="0.026124"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>policie.cz</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T21:55:56.356727" elapsed="1.799531"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:55:58.160258" level="INFO">Current location is 'https://www.policie.cz/SCRIPT/imapa.aspx?area=jm&amp;docid=726&amp;nid=275&amp;num=1'.</msg>
+<arg>https://www.policie.cz/SCRIPT/imapa.aspx?area=jm&amp;docid=726&amp;nid=275&amp;num=1</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:55:58.156258" elapsed="0.004000"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-05-07T21:55:58.161257" elapsed="0.065949"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:55:56.236705" elapsed="1.990501"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:55:58.228304" elapsed="2.223501"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:55:53.467958" elapsed="6.983847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC500 - proklik na policii">TC500 - proklik na policii</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

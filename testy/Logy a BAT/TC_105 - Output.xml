@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:53:34.444746" rpa="false" schemaversion="5">
+<suite id="s1" name="TC105- proklik na Facebook" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS001 - Hlavni stranka\TS001-001 Top menu\TC105- proklik na Facebook.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:53:34.641550" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:53:34.641550" elapsed="3.181186"/>
+</kw>
+<test id="s1-t1" name="Click Facebook Link and Verify" line="9">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-07T21:53:37.822736" elapsed="0.030528"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:53:37.855272" level="INFO">Clicking element 'xpath=//a[@href='https://www.facebook.com/mestyscernahora']'.</msg>
+<arg>xpath=//a[@href='https://www.facebook.com/mestyscernahora']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:53:37.854270" elapsed="1.419274"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:53:39.290122" level="INFO">${current_url} = https://www.facebook.com/mestyscernahora</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-05-07T21:53:39.273544" elapsed="0.016578"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>facebook.com</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-07T21:53:39.290122" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:53:37.822736" elapsed="1.467386"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:53:39.291593" elapsed="2.269488"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:53:34.446751" elapsed="7.114330"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC105- proklik na Facebook">TC105- proklik na Facebook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

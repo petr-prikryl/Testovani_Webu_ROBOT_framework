@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T21:57:41.542241" rpa="false" schemaversion="5">
+<suite id="s1" name="TC002-003 - Úřední deska ke dni 25042050" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Logy a BAT\..\TS002 -  Uredni deska\TC002-003 - Úřední deska ke dni 25042050.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-05-07T21:57:41.725429" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-07T21:57:41.723985" elapsed="2.498328"/>
+</kw>
+<test id="s1-t1" name="Click Link And Verify Header" line="10">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:44.223312" level="INFO">Clicking link 'xpath=//a[contains(text(), 'Celá úřední deska')]'.</msg>
+<arg>xpath=//a[contains(text(), 'Celá úřední deska')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:44.223312" elapsed="0.662808"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@class='cvi text-to-speech' and contains(text(), 'Úřední deska')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T21:57:44.886120" elapsed="0.029396"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:44.916594" level="INFO">Typing text '25.04.2050' into text field 'id=ud_ke_dni'.</msg>
+<arg>id=ud_ke_dni</arg>
+<arg>25.04.2050</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:44.915516" elapsed="0.119917"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:45.036434" level="INFO">Selecting options from selection list 'id=ud' by value 1.</msg>
+<arg>id=ud</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-05-07T21:57:45.036434" elapsed="0.135483"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:45.171917" level="INFO">Clicking button 'css=p.inline-form-button.fbtn input[type='submit']'.</msg>
+<arg>css=p.inline-form-button.fbtn input[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:45.171917" elapsed="0.821137"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:45.994055" level="INFO">Clicking link 'xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']'.</msg>
+<arg>xpath=//p[@class='inline-form-word']/a[@title='Neformátovaný přehled úřední desky zachovávající parametry vyhledávání']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:45.994055" elapsed="0.406131"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T21:57:46.452973" level="INFO">${body_text} = Černá Hora
+Mapa úřední desky
+Kritéria pro zobrazení: úřední deska ke dni 25.4.2050, dokumenty včetně archivu
+Dodatek č.1 k veřejnoprávní smlouvě o poskytnutí dotace z rozpočtu městyse Černá Hora - Sva...</msg>
+<var>${body_text}</var>
+<arg>xpath=//body</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T21:57:46.400186" elapsed="0.052787"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body_text}</arg>
+<arg>${EXPECTED_TEXT}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-07T21:57:46.453972" elapsed="0.000506"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:44.222313" elapsed="2.232165"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T21:57:46.455484" elapsed="2.244775"/>
+</kw>
+<status status="PASS" start="2024-05-07T21:57:41.543253" elapsed="7.157006"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC002-003 - Úřední deska ke dni 25042050">TC002-003 - Úřední deska ke dni 25042050</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
