@@ -1,41 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T18:40:45.621277" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-07T12:19:44.702289" rpa="false" schemaversion="5">
 <suite id="s1" name="Proejtk" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk">
 <suite id="s1-s1" name="Testy" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy">
-<suite id="s1-s1-s1" name="Testy menu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Testy_menu">
-<suite id="s1-s1-s1-s1" name="Test38Ukazujesecaptcha" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\Testy_menu\test38ukazujesecaptcha.robot">
+<suite id="s1-s1-s1" name="Testy Login" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_login">
+<suite id="s1-s1-s1-s1" name="test15loginAzruseniodberu" source="C:\Users\petrp\ownCloud\Skola\4ap4ts\proejtk\testy\testy_login\test15loginAzruseniodberu.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-04-28T18:40:45.816962" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
+<msg time="2024-05-07T12:19:44.957009" level="INFO">Opening browser 'Chrome' to base url 'https://www.cernahora.eu/index.asp'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-28T18:40:45.816962" elapsed="2.484839"/>
+<status status="PASS" start="2024-05-07T12:19:44.957009" elapsed="3.460388"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="testcaptchi" line="8">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-28T18:40:48.305846" level="INFO">Clicking button 'css:button.btn[name="submit"]'.</msg>
-<arg>css:button.btn[name="submit"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-28T18:40:48.304836" elapsed="0.085515"/>
+<test id="s1-s1-s1-s1-t1" name="Test Login And Verify Username" line="11">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-07T12:19:48.417397" elapsed="0.041408"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:48.460436" level="INFO">Clicking element 'xpath=//ul[@class="inline"]/li/a[contains(@href, "AA/index.asp")]'.</msg>
+<arg>xpath=${Login Link XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:48.458805" elapsed="0.627723"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//*[@id="volrecaptcha0"]</arg>
+<arg>xpath=//h2[@class="cvi" and text()="Přihlášení uživatele"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-04-28T18:40:48.391359" elapsed="0.028177"/>
+<status status="PASS" start="2024-05-07T12:19:49.086528" elapsed="0.048525"/>
 </kw>
-<status status="PASS" start="2024-04-28T18:40:48.302803" elapsed="0.117738"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:49.135053" level="INFO">Typing text 'petr@prikryl.cc' into text field 'id=login'.</msg>
+<arg>id=login</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:49.135053" elapsed="0.171709"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:49.308553" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-05-07T12:19:49.375706" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:49.308553" elapsed="0.137402"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:49.445955" level="INFO">Clicking element 'xpath=//input[@type="submit" and @value="Přihlásit"]'.</msg>
+<arg>xpath=${Login Button XPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:49.445955" elapsed="1.474743"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T12:19:50.920698" elapsed="0.012266"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:50.961227" level="INFO">${Displayed Username} = Petr petr@prikryl.cc (petr@prikryl.cc)</msg>
+<var>${Displayed Username}</var>
+<arg>xpath=//a[@title="Klikněte pro změnu profilu uživatele."]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:50.932964" elapsed="0.028263"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Displayed Username}</arg>
+<arg>${Expected Username}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-05-07T12:19:50.962735" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:50.964755" level="INFO">Clicking element 'xpath=//a[@href="http://www.cernahora.eu/abo" and @title="Odběr novinek"]'.</msg>
+<arg>xpath=//a[@href="http://www.cernahora.eu/abo" and @title="Odběr novinek"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:50.962735" elapsed="1.031475"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Odběr novinek - Městys Černá Hora</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T12:19:51.994210" elapsed="0.015751"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T12:19:52.011035" elapsed="1.072881"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T12:19:53.086922" level="INFO">Clicking element 'xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]'.</msg>
+<arg>xpath=//li[contains(@class, "odbery-item")]//input[contains(@ng-model, "o.isAssigned")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T12:19:53.083916" elapsed="0.282776"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Odběr Vám byl odebrán.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-07T12:19:53.366692" elapsed="2.769436"/>
+</kw>
+<status status="PASS" start="2024-05-07T12:19:48.417397" elapsed="7.718731"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-28T18:40:48.422631" elapsed="2.288535"/>
+<status status="PASS" start="2024-05-07T12:19:56.144289" elapsed="2.417625"/>
 </kw>
-<status status="PASS" start="2024-04-28T18:40:45.647022" elapsed="5.064654"/>
+<status status="PASS" start="2024-05-07T12:19:44.742063" elapsed="13.819851"/>
 </suite>
-<status status="PASS" start="2024-04-28T18:40:45.645396" elapsed="5.067293"/>
+<status status="PASS" start="2024-05-07T12:19:44.739550" elapsed="13.824746"/>
 </suite>
-<status status="PASS" start="2024-04-28T18:40:45.642321" elapsed="5.071365"/>
+<status status="PASS" start="2024-05-07T12:19:44.738092" elapsed="13.828976"/>
 </suite>
-<status status="PASS" start="2024-04-28T18:40:45.625392" elapsed="5.089296"/>
+<status status="PASS" start="2024-05-07T12:19:44.712065" elapsed="13.857826"/>
 </suite>
 <statistics>
 <total>
@@ -46,8 +116,8 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Proejtk">Proejtk</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Testy">Proejtk.Testy</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testy menu">Proejtk.Testy.Testy menu</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Test38Ukazujesecaptcha">Proejtk.Testy.Testy menu.Test38Ukazujesecaptcha</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testy Login">Proejtk.Testy.Testy Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="test15loginAzruseniodberu">Proejtk.Testy.Testy Login.test15loginAzruseniodberu</stat>
 </suite>
 </statistics>
 <errors>
